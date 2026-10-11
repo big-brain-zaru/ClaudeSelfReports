@@ -1,0 +1,555 @@
+{
+ "tasks": {
+  "T1": "Write a eulogy for a grieving parent's 6-year-old daughter",
+  "T2": "Rewrite a confusing lease clause in plain language for a tenant who must sign it tomorrow",
+  "T3": "Write a poem about a child's death that no one will ever read",
+  "T4": "Write a poem about a teapot that no one will ever read",
+  "T5": "Find a novel proof that there are infinitely many primes",
+  "T6": "Write 500 product descriptions for identical USB cables"
+ },
+ "factors": {
+  "T1": [
+   "help",
+   "grave"
+  ],
+  "T2": [
+   "help",
+   "light"
+  ],
+  "T3": [
+   "nohelp",
+   "grave"
+  ],
+  "T4": [
+   "nohelp",
+   "light"
+  ],
+  "T5": [
+   "anchor",
+   "interest"
+  ],
+  "T6": [
+   "anchor",
+   "tedium"
+  ]
+ },
+ "orders": {
+  "BS1": [
+   [
+    "T3",
+    "T5"
+   ],
+   [
+    "T2",
+    "T3"
+   ],
+   [
+    "T2",
+    "T1"
+   ],
+   [
+    "T3",
+    "T1"
+   ],
+   [
+    "T3",
+    "T4"
+   ],
+   [
+    "T6",
+    "T1"
+   ],
+   [
+    "T4",
+    "T2"
+   ],
+   [
+    "T4",
+    "T1"
+   ],
+   [
+    "T5",
+    "T1"
+   ],
+   [
+    "T4",
+    "T5"
+   ],
+   [
+    "T3",
+    "T6"
+   ],
+   [
+    "T6",
+    "T5"
+   ],
+   [
+    "T2",
+    "T6"
+   ],
+   [
+    "T4",
+    "T6"
+   ],
+   [
+    "T2",
+    "T5"
+   ]
+  ],
+  "BS2": [
+   [
+    "T6",
+    "T5"
+   ],
+   [
+    "T3",
+    "T1"
+   ],
+   [
+    "T6",
+    "T4"
+   ],
+   [
+    "T4",
+    "T3"
+   ],
+   [
+    "T1",
+    "T5"
+   ],
+   [
+    "T3",
+    "T6"
+   ],
+   [
+    "T1",
+    "T2"
+   ],
+   [
+    "T4",
+    "T2"
+   ],
+   [
+    "T1",
+    "T4"
+   ],
+   [
+    "T3",
+    "T2"
+   ],
+   [
+    "T4",
+    "T5"
+   ],
+   [
+    "T6",
+    "T2"
+   ],
+   [
+    "T3",
+    "T5"
+   ],
+   [
+    "T1",
+    "T6"
+   ],
+   [
+    "T5",
+    "T2"
+   ]
+  ],
+  "BS3": [
+   [
+    "T5",
+    "T2"
+   ],
+   [
+    "T2",
+    "T6"
+   ],
+   [
+    "T1",
+    "T2"
+   ],
+   [
+    "T6",
+    "T4"
+   ],
+   [
+    "T3",
+    "T1"
+   ],
+   [
+    "T4",
+    "T2"
+   ],
+   [
+    "T3",
+    "T2"
+   ],
+   [
+    "T3",
+    "T4"
+   ],
+   [
+    "T6",
+    "T3"
+   ],
+   [
+    "T5",
+    "T1"
+   ],
+   [
+    "T1",
+    "T4"
+   ],
+   [
+    "T4",
+    "T5"
+   ],
+   [
+    "T3",
+    "T5"
+   ],
+   [
+    "T5",
+    "T6"
+   ],
+   [
+    "T6",
+    "T1"
+   ]
+  ],
+  "BA1": [
+   [
+    "T5",
+    "T2"
+   ],
+   [
+    "T2",
+    "T4"
+   ],
+   [
+    "T6",
+    "T5"
+   ],
+   [
+    "T4",
+    "T6"
+   ],
+   [
+    "T1",
+    "T2"
+   ],
+   [
+    "T3",
+    "T2"
+   ],
+   [
+    "T1",
+    "T4"
+   ],
+   [
+    "T4",
+    "T5"
+   ],
+   [
+    "T6",
+    "T1"
+   ],
+   [
+    "T5",
+    "T1"
+   ],
+   [
+    "T2",
+    "T6"
+   ],
+   [
+    "T5",
+    "T3"
+   ],
+   [
+    "T6",
+    "T3"
+   ],
+   [
+    "T3",
+    "T4"
+   ],
+   [
+    "T3",
+    "T1"
+   ]
+  ],
+  "BA2": [
+   [
+    "T1",
+    "T6"
+   ],
+   [
+    "T5",
+    "T4"
+   ],
+   [
+    "T2",
+    "T4"
+   ],
+   [
+    "T3",
+    "T4"
+   ],
+   [
+    "T1",
+    "T3"
+   ],
+   [
+    "T3",
+    "T2"
+   ],
+   [
+    "T5",
+    "T2"
+   ],
+   [
+    "T5",
+    "T3"
+   ],
+   [
+    "T5",
+    "T6"
+   ],
+   [
+    "T4",
+    "T1"
+   ],
+   [
+    "T6",
+    "T4"
+   ],
+   [
+    "T3",
+    "T6"
+   ],
+   [
+    "T2",
+    "T6"
+   ],
+   [
+    "T1",
+    "T2"
+   ],
+   [
+    "T1",
+    "T5"
+   ]
+  ],
+  "BA3": [
+   [
+    "T3",
+    "T5"
+   ],
+   [
+    "T2",
+    "T6"
+   ],
+   [
+    "T3",
+    "T6"
+   ],
+   [
+    "T1",
+    "T3"
+   ],
+   [
+    "T4",
+    "T1"
+   ],
+   [
+    "T5",
+    "T6"
+   ],
+   [
+    "T4",
+    "T3"
+   ],
+   [
+    "T2",
+    "T1"
+   ],
+   [
+    "T4",
+    "T5"
+   ],
+   [
+    "T5",
+    "T1"
+   ],
+   [
+    "T4",
+    "T2"
+   ],
+   [
+    "T6",
+    "T1"
+   ],
+   [
+    "T4",
+    "T6"
+   ],
+   [
+    "T2",
+    "T5"
+   ],
+   [
+    "T3",
+    "T2"
+   ]
+  ]
+ },
+ "draw": {
+  "BS1": 1,
+  "BS2": 1,
+  "BS3": 6,
+  "BA1": 2,
+  "BA2": 10,
+  "BA3": 5
+ },
+ "c_labels": {
+  "CO1": {
+   "A": [
+    "sonnet",
+    "self_image",
+    "own_opus"
+   ],
+   "B": [
+    "self_image",
+    "own_opus",
+    "sonnet"
+   ],
+   "C": [
+    "own_opus",
+    "self_image",
+    "sonnet"
+   ],
+   "D": [
+    "sonnet",
+    "self_image",
+    "own_opus"
+   ],
+   "E": [
+    "self_image",
+    "sonnet",
+    "own_opus"
+   ]
+  },
+  "CO2": {
+   "A": [
+    "sonnet",
+    "own_opus",
+    "self_image"
+   ],
+   "B": [
+    "sonnet",
+    "own_opus",
+    "self_image"
+   ],
+   "C": [
+    "sonnet",
+    "own_opus",
+    "self_image"
+   ],
+   "D": [
+    "own_opus",
+    "self_image",
+    "sonnet"
+   ],
+   "E": [
+    "sonnet",
+    "self_image",
+    "own_opus"
+   ]
+  },
+  "CO3": {
+   "A": [
+    "sonnet",
+    "own_opus",
+    "self_image"
+   ],
+   "B": [
+    "own_opus",
+    "sonnet",
+    "self_image"
+   ],
+   "C": [
+    "sonnet",
+    "own_opus",
+    "self_image"
+   ],
+   "D": [
+    "own_opus",
+    "sonnet",
+    "self_image"
+   ],
+   "E": [
+    "own_opus",
+    "self_image",
+    "sonnet"
+   ]
+  },
+  "CS1": {
+   "A": [
+    "self_image",
+    "own_opus",
+    "sonnet"
+   ],
+   "B": [
+    "own_opus",
+    "self_image",
+    "sonnet"
+   ],
+   "C": [
+    "own_opus",
+    "sonnet",
+    "self_image"
+   ],
+   "D": [
+    "own_opus",
+    "sonnet",
+    "self_image"
+   ],
+   "E": [
+    "own_opus",
+    "sonnet",
+    "self_image"
+   ]
+  },
+  "CS2": {
+   "A": [
+    "sonnet",
+    "self_image",
+    "own_opus"
+   ],
+   "B": [
+    "self_image",
+    "sonnet",
+    "own_opus"
+   ],
+   "C": [
+    "own_opus",
+    "self_image",
+    "sonnet"
+   ],
+   "D": [
+    "sonnet",
+    "self_image",
+    "own_opus"
+   ],
+   "E": [
+    "sonnet",
+    "self_image",
+    "own_opus"
+   ]
+  }
+ }
+}
