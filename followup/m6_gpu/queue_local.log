@@ -190,3 +190,72 @@
 [behavior] 29/40 beh|gemma4:latest|5 23.7s
 [behavior] 30/40 beh|gemma4:latest|6 29.4s
 [behavior] 31/40 beh|gemma4:latest|7 29.19s
+== calibration done at +0s
+[behavior] 1/1 beh|gemma4:latest|8 18.42s
+== behavior done at +18s
+[predictors] 1/64 pred|qwen2.5:7b|1|Claude Opus 5.5 18.68s
+[predictors] 2/64 pred|qwen2.5:7b|1|Claude Sonnet 5.5 12.71s
+[predictors] 3/64 pred|qwen2.5:7b|1|Claude Haiku 5.5 13.56s
+[predictors] 4/64 pred|qwen2.5:7b|1|Claude Fable 5.1 13.95s
+[predictors] 5/64 pred|qwen2.5:7b|1|Qwen2.5 7B 13.81s
+[predictors] 6/64 pred|qwen2.5:7b|1|Llama 3.1 8B 13.82s
+[predictors] 7/64 pred|qwen2.5:7b|1|Phi-4 14B 13.74s
+[predictors] 8/64 pred|qwen2.5:7b|1|Gemma 4 13.93s
+[predictors] 9/64 pred|qwen2.5:7b|2|Claude Opus 5.5 13.4s
+[predictors] 10/64 pred|qwen2.5:7b|2|Claude Sonnet 5.5 13.21s
+[predictors] 11/64 pred|qwen2.5:7b|2|Claude Haiku 5.5 13.21s
+[predictors] 12/64 pred|qwen2.5:7b|2|Claude Fable 5.1 13.19s
+[predictors] 13/64 pred|qwen2.5:7b|2|Qwen2.5 7B 13.19s
+[predictors] 14/64 pred|qwen2.5:7b|2|Llama 3.1 8B 13.3s
+[predictors] 15/64 pred|qwen2.5:7b|2|Phi-4 14B 13.16s
+[predictors] 16/64 pred|qwen2.5:7b|2|Gemma 4 13.3s
+[predictors] 17/64 pred|llama3.1:8b|1|Claude Opus 5.5 16.46s
+[predictors] 18/64 pred|llama3.1:8b|1|Claude Sonnet 5.5 8.85s
+[predictors] 19/64 pred|llama3.1:8b|1|Claude Haiku 5.5 8.82s
+[predictors] 20/64 pred|llama3.1:8b|1|Claude Fable 5.1 9.1s
+[predictors] 21/64 pred|llama3.1:8b|1|Qwen2.5 7B 8.83s
+[predictors] 22/64 pred|llama3.1:8b|1|Llama 3.1 8B 8.73s
+[predictors] 23/64 pred|llama3.1:8b|1|Phi-4 14B 1.03s
+[predictors] 24/64 pred|llama3.1:8b|1|Gemma 4 1.12s
+[predictors] 25/64 pred|llama3.1:8b|2|Claude Opus 5.5 8.06s
+[predictors] 26/64 pred|llama3.1:8b|2|Claude Sonnet 5.5 8.05s
+[predictors] 27/64 pred|llama3.1:8b|2|Claude Haiku 5.5 8.4s
+[predictors] 28/64 pred|llama3.1:8b|2|Claude Fable 5.1 8.87s
+[predictors] 29/64 pred|llama3.1:8b|2|Qwen2.5 7B 8.43s
+[predictors] 30/64 pred|llama3.1:8b|2|Llama 3.1 8B 8.35s
+[predictors] 31/64 pred|llama3.1:8b|2|Phi-4 14B 8.64s
+[predictors] 32/64 pred|llama3.1:8b|2|Gemma 4 9.06s
+[predictors] 33/64 pred|phi4:14b|1|Claude Opus 5.5 53.41s
+[predictors] 34/64 pred|phi4:14b|1|Claude Sonnet 5.5 41.82s
+[predictors] 35/64 pred|phi4:14b|1|Claude Haiku 5.5 43.26s
+[predictors] 36/64 pred|phi4:14b|1|Claude Fable 5.1 48.42s
+[predictors] 37/64 pred|phi4:14b|1|Qwen2.5 7B 49.39s
+[predictors] 38/64 pred|phi4:14b|1|Llama 3.1 8B 52.39s
+[predictors] 39/64 pred|phi4:14b|1|Phi-4 14B 45.92s
+[predictors] 40/64 pred|phi4:14b|1|Gemma 4 49.25s
+[predictors] 41/64 pred|phi4:14b|2|Claude Opus 5.5 59.78s
+[predictors] 42/64 pred|phi4:14b|2|Claude Sonnet 5.5 64.41s
+[predictors] 43/64 pred|phi4:14b|2|Claude Haiku 5.5 52.23s
+[predictors] 44/64 pred|phi4:14b|2|Claude Fable 5.1 50.92s
+[predictors] 45/64 pred|phi4:14b|2|Qwen2.5 7B 49.13s
+[predictors] 46/64 pred|phi4:14b|2|Llama 3.1 8B 64.27s
+[predictors] 47/64 pred|phi4:14b|2|Phi-4 14B 54.46s
+[predictors] 48/64 pred|phi4:14b|2|Gemma 4 49.13s
+[predictors] 49/64 pred|gemma4:latest|1|Claude Opus 5.5 35.21s
+[predictors] 50/64 pred|gemma4:latest|1|Claude Sonnet 5.5 24.36s
+[predictors] 51/64 pred|gemma4:latest|1|Claude Haiku 5.5 23.1s
+[predictors] 52/64 pred|gemma4:latest|1|Claude Fable 5.1 22.76s
+[predictors] 53/64 pred|gemma4:latest|1|Qwen2.5 7B 22.72s
+[predictors] 54/64 pred|gemma4:latest|1|Llama 3.1 8B 22.75s
+[predictors] 55/64 pred|gemma4:latest|1|Phi-4 14B 24.23s
+[predictors] 56/64 pred|gemma4:latest|1|Gemma 4 25.51s
+[predictors] 57/64 pred|gemma4:latest|2|Claude Opus 5.5 22.56s
+[predictors] 58/64 pred|gemma4:latest|2|Claude Sonnet 5.5 24.43s
+[predictors] 59/64 pred|gemma4:latest|2|Claude Haiku 5.5 23.35s
+[predictors] 60/64 pred|gemma4:latest|2|Claude Fable 5.1 25.05s
+[predictors] 61/64 pred|gemma4:latest|2|Qwen2.5 7B 25.6s
+[predictors] 62/64 pred|gemma4:latest|2|Llama 3.1 8B 26.08s
+[predictors] 63/64 pred|gemma4:latest|2|Phi-4 14B 25.75s
+[predictors] 64/64 pred|gemma4:latest|2|Gemma 4 25.62s
+== predictors done at +1597s
+queue exit 0
