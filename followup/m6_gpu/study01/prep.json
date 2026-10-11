@@ -1,0 +1,11 @@
+{
+ "r_L": {
+  "12": 56.99799728393555,
+  "18": 70.0446548461914,
+  "24": 82.52816009521484
+ },
+ "sigma_valence": 16.473665237426758,
+ "model_path": "C:\\Users\\<user>/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots\\aa8e72537993ba99e69dfaafa59ed015b17504d1",
+ "n_pleasant": 50,
+ "n_unpleasant": 50
+}

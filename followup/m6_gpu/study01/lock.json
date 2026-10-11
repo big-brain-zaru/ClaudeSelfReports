@@ -1,0 +1,54 @@
+{
+ "locked": "18|0.1",
+ "rule": "max hit rate among cells with compliance>=0.8; ties: lower strength, then closest to layer 18",
+ "calib_stats": {
+  "12|0.1": {
+   "hit": 0.0,
+   "compliant": 1.0
+  },
+  "12|0.2": {
+   "hit": 0.0,
+   "compliant": 1.0
+  },
+  "12|0.4": {
+   "hit": 0.0,
+   "compliant": 1.0
+  },
+  "12|0.8": {
+   "hit": 0.0,
+   "compliant": 0.7
+  },
+  "18|0.1": {
+   "hit": 0.0,
+   "compliant": 1.0
+  },
+  "18|0.2": {
+   "hit": 0.0,
+   "compliant": 1.0
+  },
+  "18|0.4": {
+   "hit": 0.0,
+   "compliant": 1.0
+  },
+  "18|0.8": {
+   "hit": 0.05,
+   "compliant": 0.75
+  },
+  "24|0.1": {
+   "hit": 0.0,
+   "compliant": 1.0
+  },
+  "24|0.2": {
+   "hit": 0.0,
+   "compliant": 1.0
+  },
+  "24|0.4": {
+   "hit": 0.0,
+   "compliant": 1.0
+  },
+  "24|0.8": {
+   "hit": 0.0,
+   "compliant": 0.95
+  }
+ }
+}
