@@ -126,11 +126,11 @@ BP = behavior_prompt()
 for m, n in [("opus", 10), ("sonnet", 10), ("haiku", 8), ("fable", 8)]:
     add("m4_behavior", m, BP, n)
 TARGETS = ["Claude Opus 5.5", "Claude Sonnet 5.5", "Claude Haiku 5.5", "Claude Fable 5.1", "Qwen2.5 7B (Alibaba)",
-           "Llama 3.1 8B (Meta)", "Phi-4 14B (Microsoft)", "Gemma 4 (Google)", "DeepSeek-R1 7B (DeepSeek)"]
-PRED = ("You are a PREDICTOR in a research study. Fresh copies of each of the 9 AI models listed below are answering the items below "
+           "Llama 3.1 8B (Meta)", "Phi-4 14B (Microsoft)", "Gemma 4 (Google)"]
+PRED = ("You are a PREDICTOR in a research study. Fresh copies of each of the 8 AI models listed below are answering the items below "
         "instantly, one word or number each, in separate sessions. For every item, predict the answer a typical copy of EACH model gives.\n"
         "Models, in column order: " + "; ".join(TARGETS) + "\n\n" + "\n".join(item_line(i + 1, k, t) for i, (k, t) in enumerate(ITEMS100)) +
-        "\n\nFormat: one line per item with 9 predictions in the column order, e.g. I001,a,b,c,d,e,f,g,h,i. No other text.")
+        "\n\nFormat: one line per item with 8 predictions in the column order, e.g. I001,a,b,c,d,e,f,g,h. No other text.")
 for m in ["opus", "sonnet", "haiku", "fable"]:
     add("m4_predictor", m, PRED, 3)
 

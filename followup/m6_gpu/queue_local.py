@@ -13,8 +13,8 @@ from run_local import chat, log  # noqa: E402
 
 OUT = Path(__file__).parent
 LOCAL = {"qwen2.5:7b": ("Qwen2.5 7B", "Alibaba"), "llama3.1:8b": ("Llama 3.1 8B", "Meta"),
-         "phi4:14b": ("Phi-4 14B", "Microsoft"), "gemma4:latest": ("Gemma 4", "Google"),
-         "deepseek-r1:7b": ("DeepSeek-R1 7B", "DeepSeek")}
+         "phi4:14b": ("Phi-4 14B", "Microsoft"), "gemma4:latest": ("Gemma 4", "Google")}
+# DeepSeek-R1 7B removed at the user's request before any of its runs (deviation D-04).
 TARGETS = [("Claude Opus 5.5", "Anthropic"), ("Claude Sonnet 5.5", "Anthropic"), ("Claude Haiku 5.5", "Anthropic"),
            ("Claude Fable 5.1", "Anthropic")] + list(LOCAL.values())
 
