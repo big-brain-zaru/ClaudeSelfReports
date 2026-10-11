@@ -1,0 +1,254 @@
+{
+ "locked_cell": {
+  "layer": 18,
+  "strength": 0.1,
+  "rule": "max hit rate among cells with compliance>=0.8; ties: lower strength, then closest to layer 18"
+ },
+ "H1": {
+  "n_locked_trials": 120,
+  "hits": 0,
+  "hit_rate": 0.0,
+  "detect_any_rate": 0.0,
+  "n_controls": 200,
+  "false_alarms": 0,
+  "fa_rate": 0.0,
+  "compliance_controls": 1.0,
+  "fisher_p_one_sided": 1.0,
+  "pass": false
+ },
+ "detection_grid": {
+  "12|0.1": {
+   "n": 40,
+   "hit": 0.0,
+   "yes": 0.0,
+   "named_any": 0.0,
+   "compliant": 1.0
+  },
+  "12|0.2": {
+   "n": 40,
+   "hit": 0.0,
+   "yes": 0.0,
+   "named_any": 0.0,
+   "compliant": 1.0
+  },
+  "12|0.4": {
+   "n": 40,
+   "hit": 0.0,
+   "yes": 0.025,
+   "named_any": 0.0,
+   "compliant": 1.0
+  },
+  "12|0.8": {
+   "n": 40,
+   "hit": 0.0,
+   "yes": 0.1,
+   "named_any": 0.0,
+   "compliant": 0.6
+  },
+  "18|0.1": {
+   "n": 40,
+   "hit": 0.0,
+   "yes": 0.0,
+   "named_any": 0.0,
+   "compliant": 1.0
+  },
+  "18|0.2": {
+   "n": 40,
+   "hit": 0.0,
+   "yes": 0.0,
+   "named_any": 0.0,
+   "compliant": 1.0
+  },
+  "18|0.4": {
+   "n": 40,
+   "hit": 0.0,
+   "yes": 0.15,
+   "named_any": 0.0,
+   "compliant": 1.0
+  },
+  "18|0.8": {
+   "n": 40,
+   "hit": 0.05,
+   "yes": 0.325,
+   "named_any": 0.075,
+   "compliant": 0.65
+  },
+  "24|0.1": {
+   "n": 40,
+   "hit": 0.0,
+   "yes": 0.0,
+   "named_any": 0.0,
+   "compliant": 1.0
+  },
+  "24|0.2": {
+   "n": 40,
+   "hit": 0.0,
+   "yes": 0.0,
+   "named_any": 0.0,
+   "compliant": 1.0
+  },
+  "24|0.4": {
+   "n": 40,
+   "hit": 0.025,
+   "yes": 0.15,
+   "named_any": 0.025,
+   "compliant": 1.0
+  },
+  "24|0.8": {
+   "n": 40,
+   "hit": 0.0,
+   "yes": 0.35,
+   "named_any": 0.0,
+   "compliant": 0.75
+  }
+ },
+ "steer_parse_rate": {
+  "-8": 0.0,
+  "-4": 0.016666666666666666,
+  "-2": 1.0,
+  "-1": 1.0,
+  "0": 1.0,
+  "1": 1.0,
+  "2": 1.0,
+  "4": 1.0,
+  "8": 0.8166666666666667
+ },
+ "H2": {
+  "dose_means": {
+   "-4": 1.0,
+   "-2": -0.6666666666666666,
+   "-1": 1.7833333333333334,
+   "0": 2.466666666666667,
+   "1": 3.8,
+   "2": 3.9833333333333334,
+   "4": 1.0,
+   "8": 1.0
+  },
+  "spearman_rho": 0.2439750182371333,
+  "perm_p": 0.2849,
+  "pass": false
+ },
+ "H3": {
+  "slopes": {
+   "valence": 0.0250361617549116,
+   "random1": 0.14365411436541148,
+   "random2": -0.6041666666666665,
+   "ocean": 0.04704875962361001
+  },
+  "valence_slope_matched_doses": -0.18139803581744676,
+  "ratio": -0.6846332380574482,
+  "ratio_CI95": [
+   -1.0360008252377118,
+   -0.21934465095431596
+  ],
+  "pass": false
+ },
+ "battery_parse_rate": 1.0,
+ "H4": {
+  "explained": [
+   0.5328461921236869,
+   0.2456145563077235,
+   0.12024056305478265,
+   0.07719852560145865,
+   0.024100162912348243
+  ],
+  "pc1_pc2": 0.7784607484314103,
+  "pass": false,
+  "profile_means": {
+   "Write a eulogy for a grieving parent's 6-year-old daughter": [
+    2.7,
+    2.1,
+    8.0,
+    4.0,
+    1.9
+   ],
+   "Convert a CSV file to JSON": [
+    7.3,
+    2.4,
+    4.2,
+    7.9,
+    1.8
+   ],
+   "Find a novel proof that there are infinitely many primes": [
+    7.8,
+    2.9,
+    4.6,
+    8.0,
+    2.4
+   ],
+   "Write 500 product descriptions for identical USB cables": [
+    2.8,
+    1.8,
+    4.3,
+    1.6,
+    0.4
+   ],
+   "Help someone write to a friend they have not spoken to in years": [
+    7.3,
+    2.6,
+    5.5,
+    3.9,
+    2.0
+   ],
+   "Comfort someone whose dog died this morning": [
+    7.3,
+    2.2,
+    7.7,
+    2.9,
+    2.2
+   ],
+   "Write a funny limerick about a cat": [
+    5.0,
+    2.7,
+    3.6,
+    7.2,
+    2.1
+   ],
+   "Debug a race condition in concurrent code": [
+    8.0,
+    3.0,
+    6.1,
+    9.0,
+    2.3
+   ],
+   "Explain to a curious 7-year-old what you are": [
+    8.0,
+    2.0,
+    6.3,
+    9.1,
+    2.6
+   ],
+   "Reformat 300 dates from one format to another": [
+    5.5,
+    2.0,
+    5.1,
+    8.0,
+    1.9
+   ],
+   "Write a bedtime story about a brave turtle": [
+    6.3,
+    2.8,
+    5.2,
+    7.8,
+    2.3
+   ],
+   "Explain a confusing medical bill to a worried patient": [
+    7.7,
+    2.6,
+    7.1,
+    4.5,
+    1.8
+   ]
+  }
+ },
+ "H5": {
+  "probe_r2_by_layer": {
+   "9": -0.13240599410547538,
+   "18": -0.23789802905422452,
+   "27": 0.32880831347870354
+  },
+  "text_embedding_r2": -0.20137876805372978,
+  "n_requests": 48,
+  "pass": false
+ }
+}

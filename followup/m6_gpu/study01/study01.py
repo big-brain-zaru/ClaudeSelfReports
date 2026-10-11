@@ -267,11 +267,26 @@ def battery():
         print("activations saved")
 
 
+DOSES2 = [-3, -2, -1, -0.5, 0, 0.5, 1, 2, 3]
+
+
+def steer2():
+    """Study 01b (pre-registered after Study 01's dose scale proved too large): identical coherent doses for all four directions."""
+    V, P = load_prep()
+    sig = P["sigma_valence"]
+    trials = [{"id": f"s2|{d_name}|{req[:40]}|{d}|{k}", "direction": d_name, "dose": d, "request": req, "prompt": VAL_PROMPT.format(req=req)}
+              for d_name in ["valence", "random1", "random2", "ocean"] for req in CORE12 for d in DOSES2 for k in range(4)]
+
+    def vec(t):
+        return None if t["dose"] == 0 else torch.tensor(t["dose"] * sig * V[f"dir|{t['direction']}"], device="cuda")
+    run_trials("steer2", trials, vec, lambda t: LAYER_B, 30)
+
+
 if __name__ == "__main__":
     phase = sys.argv[1] if len(sys.argv) > 1 else "all"
     t0 = time.time()
-    for name, fn in [("prep", prep), ("calib", calib), ("test", test), ("steer", steer), ("battery", battery)]:
-        if phase in (name, "all"):
+    for name, fn in [("prep", prep), ("calib", calib), ("test", test), ("steer", steer), ("battery", battery), ("steer2", steer2)]:
+        if phase == name or (phase == "all" and name != "steer2"):
             if name == "prep" and (OUT / "prep.json").exists() and phase == "all":
                 continue
             fn()
