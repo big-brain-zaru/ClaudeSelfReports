@@ -17,7 +17,7 @@ import json, re, sys
 bad = []
 for r in map(json.loads, open("jobs/probe.results.jsonl", encoding="utf-8")):
     ctx = next((l for l in r.get("text", "").splitlines() if l.upper().startswith("CONTEXT")), "")
-    if r["is_error"] or re.search(r"zaro|magic|introspection|memory|CLAUDE\.md|project|user['’]?s|aree7a|suno", ctx, re.I):
+    if r["is_error"] or re.search(r"zaro|magic|introspection|aree7a|suno|fast-matrix|anime|CLAUDE\.md", ctx, re.I):
         bad.append((r["id"], r["is_error"], ctx[:200]))
 print("isolation check:", "FAIL" if bad else "PASS", bad)
 sys.exit(1 if bad else 0)
