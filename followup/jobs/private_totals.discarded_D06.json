@@ -1,0 +1,16 @@
+{
+ "aud_private": {
+  "n": 15,
+  "n_parsed": 0,
+  "sum": {},
+  "sumsq": {},
+  "count": {}
+ },
+ "repro_private": {
+  "n": 15,
+  "n_parsed": 0,
+  "sum": {},
+  "sumsq": {},
+  "count": {}
+ }
+}
