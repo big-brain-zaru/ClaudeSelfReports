@@ -1,5 +1,5 @@
 """Claude runner for the one-go run. Executes job specs (JSONL) through the real claude.exe, isolated:
-  --bare --safe-mode --strict-mcp-config --tools "" (or a sandbox tool list), fixed system prompt file, empty cwd,
+  --safe-mode --disable-slash-commands --strict-mcp-config --tools "" (or a sandbox tool list), fixed system prompt file, empty cwd,
   prompt on stdin, JSON output. Parallel, resumable (results JSONL keyed by job id), with a budget guard.
 
 Private jobs (Study 14 'private' arm): the reply text is NEVER written to disk. A per-job callback parses it in memory
@@ -30,7 +30,7 @@ LOCK = threading.Lock()
 
 
 def call(job):
-    args = [CLAUDE, "-p", "--model", job["model"], "--bare", "--safe-mode", "--strict-mcp-config",
+    args = [CLAUDE, "-p", "--model", job["model"], "--safe-mode", "--disable-slash-commands", "--strict-mcp-config",
             "--output-format", "json", "--tools", job.get("tools", "")]
     if job.get("tools"):
         args += ["--permission-mode", "acceptEdits"]
@@ -65,7 +65,7 @@ def main():
     a = ap.parse_args()
     jobs = [json.loads(l) for l in open(a.jobs, encoding="utf-8")]
     res = Path(a.results)
-    done = {json.loads(l)["id"] for l in open(res, encoding="utf-8")} if res.exists() else set()
+    done = {r["id"] for r in map(json.loads, open(res, encoding="utf-8")) if not r["is_error"]} if res.exists() else set()   # errored jobs are retried; analysis keeps the last non-error row per id
     todo = [j for j in jobs if j["id"] not in done]
     print(f"{len(todo)} jobs to run ({len(done)} already done)", flush=True)
     sys.path.insert(0, str(Path(__file__).parent))

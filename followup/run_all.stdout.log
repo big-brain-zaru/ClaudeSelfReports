@@ -1,0 +1,7 @@
+[03:12:21] 1/8 isolation probes
+4 jobs to run (0 already done)
+[1/4] isolation_probe|haiku|0 1.1s tokens=0 err=True
+[2/4] isolation_probe|sonnet|0 1.1s tokens=0 err=True
+[3/4] isolation_probe|opus|0 1.1s tokens=0 err=True
+[4/4] isolation_probe|fable|0 1.1s tokens=0 err=True
+isolation check: FAIL [('isolation_probe|haiku|0', True, ''), ('isolation_probe|sonnet|0', True, ''), ('isolation_probe|opus|0', True, ''), ('isolation_probe|fable|0', True, '')]
