@@ -42,16 +42,24 @@ def matched(p, h0):
 
 
 # 1. Seals
-m1_ok, m1_form = False, None
-for form in ("exact", "lf", "crlf"):
+# The M1 seal is one hash over the 12 prediction files (name + bytes, sorted). The files were written by different tools,
+# so their original line endings were not uniform; the search below tries every per-file LF/CRLF assignment (2^12) and
+# the seal verifies only if one assignment reproduces the sealed hash exactly.
+import itertools  # noqa: E402
+
+csvs = sorted((FU / "m1_predictions" / "predictions").glob("*.csv"))
+seal_m1 = open(FU / "m1_predictions" / "SEAL.sha256").read().split()[0]
+m1_ok, m1_assign = False, None
+for combo in itertools.product(("lf", "crlf"), repeat=len(csvs)):
     h = hashlib.sha256()
-    for f in sorted((FU / "m1_predictions" / "predictions").glob("*.csv")):
+    for f, form in zip(csvs, combo):
         h.update(f.name.encode() + b"\n" + forms(f.read_bytes())[form])
-    if h.hexdigest() == open(FU / "m1_predictions" / "SEAL.sha256").read().split()[0] and \
-            matched(FU / "m1_predictions" / "predictions" / "main_instance.csv", open(FU / "m1_predictions" / "main_instance.sha256").read().split()[0]):
-        m1_ok, m1_form = True, form
+    if h.hexdigest() == seal_m1:
+        m1_ok, m1_assign = True, combo
         break
-check("M1 prediction seal (12 predictor files, hashed before any follow-up data)", m1_ok, f"matched as {m1_form} bytes" if m1_ok else "")
+main_form = matched(FU / "m1_predictions" / "predictions" / "main_instance.csv", open(FU / "m1_predictions" / "main_instance.sha256").read().split()[0])
+check("M1 prediction seal (12 predictor files, hashed before any follow-up data)", m1_ok and main_form is not None,
+      f"original endings: {sum(c == 'crlf' for c in m1_assign)} CRLF, {sum(c == 'lf' for c in m1_assign)} LF files; main_instance as {main_form}" if m1_ok else "")
 lines = [l for l in open(M8 / "SEAL_ANALYSIS.sha256", encoding="utf-8").read().splitlines() if l and not l.startswith("#")]
 # SEAL_POST.sha256 lists files from the seal that were changed after the analysis ran, with their new hash and the
 # reason (post-analysis note P-06). A sealed file may differ from the seal only if that manifest names it.

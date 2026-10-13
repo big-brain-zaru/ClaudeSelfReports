@@ -51,7 +51,7 @@ author's other research repositories), so a fresh checkout on any system has LF 
 value although the content is identical. Every sealed file is pure CRLF with a final newline, so `reproduce.py` verifies a
 sealed file if its bytes match the seal exactly or after canonicalising line endings to LF or to CRLF (the CRLF form
 reconstructs the sealed bytes exactly), and it reports which form matched. The entries in `SEAL_POST.sha256` are recorded
-over LF bytes and are verified the same way. No content of any sealed file changed in this step.
+over LF bytes and are verified the same way. The M1 prediction seal is one hash over twelve CSV files whose original line endings were not uniform (eleven CRLF files written by sub-agents, one LF file written by the main instance), so the check searches every per-file LF/CRLF assignment and verifies only if one reproduces the sealed hash exactly. No content of any sealed file changed in this step.
 
 ## P-05. Operational finding on the agentic arm (D-13)
 17 of 42 attempted sandbox sessions (first attempt plus one retry) were stopped at their first call by the Opus 5.5
