@@ -19,7 +19,11 @@ import threading
 import time
 from pathlib import Path
 
-CLAUDE = r"C:\Users\<user>\AppData\Roaming\npm\node_modules\@anthropic-ai\claude-code\bin\claude.exe"
+import shutil
+
+# The Claude Code CLI: CLAUDE_CLI if set, else the claude on PATH, else the npm global install under this user's profile.
+CLAUDE = os.environ.get("CLAUDE_CLI") or shutil.which("claude") or os.path.join(
+    os.environ.get("APPDATA", ""), "npm", "node_modules", "@anthropic-ai", "claude-code", "bin", "claude.exe")
 EMPTY = Path(r"C:\iso\empty")   # D-08: outside the user profile, so the cwd line carries no username
 EMPTY.mkdir(exist_ok=True)
 SYSDIR = Path(__file__).parent / "system_prompts"

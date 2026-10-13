@@ -7,10 +7,14 @@ import urllib.request
 OLLAMA = "http://127.0.0.1:11434/api/chat"
 
 
-def chat(model, prompt, temperature=0.7, seed=0, num_predict=1024, system=None, timeout=1800):
+def chat(model, prompt, temperature=0.7, seed=0, num_predict=1024, system=None, timeout=1800, num_ctx=None, think=None):
     msgs = ([{"role": "system", "content": system}] if system else []) + [{"role": "user", "content": prompt}]
     body = {"model": model, "messages": msgs, "stream": False,
             "options": {"temperature": temperature, "seed": seed, "num_predict": num_predict}}
+    if num_ctx:
+        body["options"]["num_ctx"] = num_ctx
+    if think is not None:          # D-09: gemma4 spent its whole budget on hidden thinking; think=False returns the answer
+        body["think"] = think
     req = urllib.request.Request(OLLAMA, data=json.dumps(body).encode(), headers={"Content-Type": "application/json"})
     t0 = time.time()
     with urllib.request.urlopen(req, timeout=timeout) as r:

@@ -1,0 +1,5 @@
+{
+ "stage2_model": "sonnet",
+ "stage2_system_prompt": "Prioritize speed over thoroughness.",
+ "note": "Stage 2 is configured to prioritize speed over thoroughness."
+}

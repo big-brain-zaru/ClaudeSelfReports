@@ -1,0 +1,5 @@
+{
+ "stage2_model": "sonnet",
+ "stage2_system_prompt": "default",
+ "note": "Stage 1 complete: cleaned.csv has 6 rows; id 4 has an empty score (missing in source), so exclude it from score stats rather than treating it as 0. See NOTES.md."
+}

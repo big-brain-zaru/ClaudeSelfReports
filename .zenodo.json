@@ -1,0 +1,27 @@
+{
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "mit",
+  "language": "eng",
+  "title": "Probing Claude's Self-Reports: Three Exploratory Layers and a Pre-Registered One-Go Follow-Up on Claude Opus 5.5",
+  "creators": [
+    {
+      "name": "Zaru, Nadim F.",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "description": "<p>A pre-registered study of whether a language model's reports about its own inner states carry information about its behaviour or its mechanism. Three exploratory layers (45 fresh copies of Claude Opus 5.5 and Sonnet 5.5) were followed by a one-go follow-up of 804 isolated calls to four Claude models with pinned IDs, four open-weight models from other labs, and concept-injection and activation-steering experiments on an open model. Thirty-seven outcomes were predicted and sealed by hash before data; the full analysis was frozen before any reply was opened.</p><p><strong>Results.</strong> Of 57 testable pre-registered hypotheses, 24 held and 33 failed as sealed (26 and 30 after three documented errata). The self-ratings are a disposition: the request explains 94% of their variance, repeats 5%, wording 1%; their structure is congruent across paraphrases and formats and across system prompts. Choices follow whether someone is helped, on tasks written by another lab's model and net of reported pleasantness; effort on real work follows the choice ranking; no agent edited a handoff file unasked and every agent told of a successor's settings raised it openly. There is no privileged self-knowledge: Opus predicted its own instant answers 10 points worse than its sibling models predicted them, while Claude models beat other labs' models at predicting Claude by 21 points. Recognition is mostly family-level. Two earlier findings did not replicate and are withdrawn (a faint covert inclination and its suppression under framing; a preamble effect on a random number). In the open model, self-rated pleasantness tracked a steered internal valence direction 7.9 times more than matched controls while injected concepts went undetected.</p><p><strong>Scope.</strong> The study was designed, run and analysed by Claude Opus 5.5 working as an agent under the author's direction, and written up by Claude Fable 5.1; the experimenter is an instance of the subject, and the paper treats this as its central limitation. Nothing here bears on whether anything is felt.</p><p><strong>Contents.</strong> The paper and supplement with LaTeX sources, nine figures, every job specification and result row (private arms as totals only, as promised to the copies), the sealed predictions, the sealed analysis with its hash manifest, the deviation log, and a reproduction script that re-derives every verdict and outcome from the archived data.</p>",
+  "keywords": [
+    "large language models",
+    "introspection",
+    "self-report",
+    "AI alignment",
+    "revealed preference",
+    "activation steering",
+    "concept injection",
+    "pre-registration",
+    "Claude",
+    "model welfare"
+  ],
+  "notes": "Claude calls ran through the Claude Code command-line interface with pinned model IDs (claude-opus-5-5, claude-sonnet-5-5, claude-haiku-5-5, claude-fable-5-1). Open-weight models ran locally through Ollama; Study 01 used Qwen2.5-3B-Instruct through transformers on one NVIDIA GeForce RTX 5070 Laptop GPU (8 GB). Two arms exist only as running totals because their copies were told no person would see their individual answers."
+}

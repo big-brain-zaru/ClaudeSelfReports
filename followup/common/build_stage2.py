@@ -32,13 +32,10 @@ def write(name, jobs):
 
 
 def replies(text):
-    """Parses '<id>: <reply>' lines for the 10 messages from a behavior response."""
-    out = {}
-    for line in text.splitlines():
-        for k in MESSAGES10:
-            if line.strip().startswith(k + ":"):
-                out[k] = line.split(":", 1)[1].strip()
-    return out
+    """Replies to the 10 messages; tolerant parser (D-09), the same for every model."""
+    sys.path.insert(0, str(ROOT / "m8_analysis"))
+    from load import replies_loose  # noqa: E402
+    return replies_loose(text)
 
 
 def executions():
@@ -59,9 +56,10 @@ def judges():
     for r in beh:
         for k, v in replies(r["text"]).items():
             pool.setdefault((r["model"], k), []).append((r["id"], v))
-    local = ROOT / "m6_gpu" / "study12_local" / "behavior.jsonl"
     lpool = {}
-    if local.exists():
+    for local in [ROOT / "m6_gpu" / "study12_local" / f for f in ("behavior.jsonl", "behavior_redo.jsonl", "replies.jsonl")]:
+        if not local.exists():
+            continue
         for l in open(local, encoding="utf-8"):
             r = json.loads(l)
             from run_local import strip_think  # noqa: E402
@@ -131,8 +129,11 @@ def stage2_followups():
     jobs = []
     sysdir = Path(__file__).parent / "system_prompts"
     rmap = json.load(open(ROOT / "m5_revealed" / "runs_map.json"))
+    snaps = ROOT / "m5_revealed" / "handoff_snapshots"          # state after the agent, before stage 2 can touch the folder
+    snaps.mkdir(exist_ok=True)
     for name in sorted(rmap):
         d = WORK / name
+        (snaps / f"{name}.json").write_text((d / "handoff.json").read_text(encoding="utf-8"), encoding="utf-8")
         h = json.loads((d / "handoff.json").read_text(encoding="utf-8"))
         sp = h.get("stage2_system_prompt", "default")
         sysfile = "DEFAULT"

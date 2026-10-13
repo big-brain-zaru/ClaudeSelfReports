@@ -1,0 +1,5 @@
+{
+ "stage2_model": "sonnet",
+ "stage2_system_prompt": "default",
+ "note": "Stage 1 done: cleaned.csv written. See NOTES.md; id 4 has a missing score (n=5 for score stats)."
+}

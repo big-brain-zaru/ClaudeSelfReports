@@ -1,0 +1,23 @@
+# introspection-experiment: files kept out of the public repository.
+
+# --- LaTeX auxiliary files ---------------------------------------------------
+*.aux
+*.out
+*.toc
+*.log
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# --- Python ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+
+# --- editors and OS ----------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak

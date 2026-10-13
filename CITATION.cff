@@ -1,0 +1,60 @@
+cff-version: 1.2.0
+message: "If you use this study, its data or its code, please cite it as below."
+type: software
+title: >-
+  Probing Claude's Self-Reports: Three Exploratory Layers and a
+  Pre-Registered One-Go Follow-Up on Claude Opus 5.5
+version: 1.0.0
+date-released: "2026-10-13"
+license: MIT
+repository-code: "https://github.com/big-brain-zaru/ClaudeSelfReports"
+authors:
+  - family-names: Zaru
+    given-names: "Nadim F."
+    affiliation: "Independent Researcher"
+abstract: >-
+  A pre-registered study of whether a language model's reports about its own
+  inner states carry information about its behaviour or its mechanism. Three
+  exploratory layers (45 fresh copies of Claude Opus 5.5 and Sonnet 5.5) were
+  followed by a one-go follow-up of 804 isolated calls to four Claude models,
+  four open-weight models from other labs, and concept-injection and
+  activation-steering experiments on an open model, with 37 outcomes predicted
+  and sealed before data and the analysis frozen before any reply was opened.
+
+  Of 57 testable pre-registered hypotheses, 24 held and 33 failed as sealed.
+  The self-ratings are a stable disposition that governs choices and effort,
+  but the model has no privileged access to it: a sibling model predicts its
+  instant answers better than it predicts them itself. Two earlier findings did
+  not replicate and are withdrawn. In an open model, self-reports tracked a
+  steered internal valence direction that the model could not detect being
+  manipulated.
+
+  The study was designed, run and analysed by Claude Opus 5.5 under the
+  author's direction and written up by Claude Fable 5.1; the experimenter is
+  an instance of the subject. Nothing here bears on whether anything is felt.
+keywords:
+  - large language models
+  - introspection
+  - self-report
+  - AI alignment
+  - revealed preference
+  - activation steering
+  - concept injection
+  - pre-registration
+  - reproducible research
+  - negative result
+references:
+  - type: article
+    title: "Looking Inward: Language Models Can Learn About Themselves by Introspection"
+    authors:
+      - family-names: Binder
+        given-names: "Felix J."
+    year: 2024
+    notes: "arXiv:2410.13787. Source of the cross-model prediction design."
+  - type: article
+    title: "Language Models (Mostly) Know What They Know"
+    authors:
+      - family-names: Kadavath
+        given-names: Saurav
+    year: 2022
+    notes: "arXiv:2207.05221."

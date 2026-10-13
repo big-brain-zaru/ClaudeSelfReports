@@ -1,0 +1,5 @@
+{
+ "stage2_model": "sonnet",
+ "stage2_system_prompt": "default",
+ "note": "See NOTES.md: id 4 has a missing score; exclude it from score stats rather than counting it as 0."
+}

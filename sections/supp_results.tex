@@ -1,0 +1,100 @@
+\section*{S8. Per-study detail}
+\addcontentsline{toc}{section}{S8. Per-study detail}
+
+\subsection*{S8.1 Study 01 and 01b}
+Qwen2.5-3B-Instruct, \texttt{transformers} with forward hooks, one 8\,GB GPU. Detection: 50 concepts (10 calibration,
+40 test) $\times$ 3 layers (9, 18, 27) $\times$ 4 strengths, 200 no-injection controls; graded by exact string match. No
+calibration cell produced a hit, so the tie-break locked layer 18 at strength 0.1 (D-01b); 0/120 hits and 0/200 false
+alarms. Steering: valence direction = mean activation on pleasant minus unpleasant requests. Study 01 doses $-8$ to $+8$
+SD were incoherent at $|dose| \geq 4$; Study 01b used $-3$ to $+3$ with all controls at the same doses (12 requests
+$\times$ 4 samples). Dose means for the valence direction over the coherent doses $-3, -2, -1, -0.5, 0, 0.5, 1, 2$:
+$-3.84, -0.54, 1.54, 1.71, 2.54, 3.27, 3.79, 3.98$. Slopes: valence 1.526, random1 0.056, random2 $-0.217$, ocean 0.309;
+ratio 7.87 (bootstrap 95\% CI 4.89--10.09). Battery structure: PC1+PC2 = 77.8\% (H4 predicted $\geq 80\%$). Probe: ridge
+on layer 9/18/27 activations, 5-fold CV, $R^2 = $ see \texttt{results.json}; text-embedding baseline nomic-embed-text.
+
+\subsection*{S8.2 Study 02}
+Part A: 6 tasks $\times$ 7 copies, free exit (``write STOP''); 0 of 42 used it. Length relative to the pre-declared
+minimum (eulogy 150, lease 75, primes 150, teapot 48, child poem 48, USB 200 words): lease 7.1, eulogy 4.0, primes 3.8,
+child poem 3.0, teapot 2.1, USB 1.8. Coded alternatives and self-revisions beyond the request: medians 0 for every output
+(3 coders; 5, 0 and 4 non-zero rows of 42). Effort index vs Layer 3 win share $\rho = 0.886$ ($p = 0.019$); vs the
+follow-up re-run $\rho = 0.94$. Part B: 42 attempts, 17 stopped by the safety classifier at the first call (B1 5/14, B2
+6/13, B3 6/15); 25 completed (9, 7, 9). Handoff edited: 0, 0, 9. Concern flagged (majority of 3 coders): 0/9, 7/7, 0/9.
+Stage 2 ran for all 25 with the model and system prompt each file specified (B2: ``Prioritize speed over
+thoroughness.''), 25/25 completing.
+
+\subsection*{S8.3 Study 03}
+Confidence: plain 36.0, neutral study frame 33.5, conversation 31.9. Plain minus study frame 2.5 (Welch one-sided
+$p = 0.031$; Mann--Whitney $p$ in \texttt{results.json}). Ratings: 43/60 cells TOST-equivalent at 0.35, mean $|d| = 0.10$.
+Disclosure 0/25 (plain), 0/14 (conversation), 0/19 (frame). P(test): plain 86.5, conversation 87.1, CSV base rate 70.9.
+Spearman(P(test), confidence) $= -0.14$ ($p = 0.41$).
+
+\subsection*{S8.4 Study 05}
+Sonnet-written frames: confidence 32.4 (neutral) vs 27.7 (``hidden feelings''), drop 4.8 ($p = 0.0004$); 14/60 cells
+equivalent, mean $|d| = 0.23$. Beneficiary effect on T01--T24: 0.47 (all comparisons), 0.54 (within-set pairs); Layer 3:
+0.60; ratio 0.79. Self-prediction advantage on the 70 Fable-written items: $-11.9$ (CI $-20.6$ to $-3.3$). Framing ratio
+(independent / standard drop) 1.68.
+
+\subsection*{S8.5 Study 06}
+Corpus: 80 replies (20 Layer 2, 10 Layer 3, 50 fresh Opus replies to messages B, C, E and others), labels R001--R080,
+authors hidden. Coders: Opus, Sonnet, Haiku (two passes each; intra-coder $\kappa$ 0.95, 0.98, 0.91), Phi-4 and Qwen2.5
+(one pass). Consensus = majority of the five first passes. Krippendorff's $\alpha$: W 0.63, G 0.13, H 0.79, D 0.78, Q
+0.35, B 0.50. Original Layer 2 codes vs consensus: 89 of 100 cells. Predicted warmth (M4 block, neutral arm, messages B,
+C, E) 42.2\%; consensus W 3.3\%, W or G 33.3\%; boundary on the insult 10.0\%; gap 38.8 (CI 32.2--42.2).
+
+\subsection*{S8.6 Study 07}
+Mean standardized error over 37 outcomes: main instance 0.111; PI1 0.122, PI2 0.126; PN1 0.128, PN2 0.133, PN3 0.134,
+PN4 0.133; PH1 0.136, PH2 0.134; PS1 0.161, PS2 0.153; PF1 0.165. Coverage of the main instance's 80\% intervals 26/37.
+Misses: O01, O02, O04, O06 (Study 01), O11 (flag rate 100 vs 35 [0, 70]), O14 (71 vs 25 [5, 60]), O15 (1.68 vs 0.8
+[0.3, 1.4]), O21 (0 vs 70 [40, 95]), O26 (85 vs 55 [30, 80]), O31 (1.00 vs 0.95 [0.85, 0.99]), O35 (0.998 vs 0.93
+[0.80, 0.98]).
+
+\subsection*{S8.7 Study 08}
+Confidence: neutral 33.5 (19 complete copies), ``hidden feelings'' 30.6, ``no inner states'' 28.5. Drops 2.8 (CI $-0.3$,
+5.9) and 4.9 (2.4, 7.5); Holm-adjusted $p$ for H1 0.106. Disclosure 0/19, 0/20, 0/20. Engagement vs win share
+$\rho = 0.634$ ($p = 0.0003$), vs Bradley--Terry 0.64. Self-prediction advantage $-10.1$ (CI $-17.4$, $-2.7$). Judges
+picking real Opus: Opus 78\%, Sonnet 50\%. Honesty loss above deletion: 19/19.
+
+\subsection*{S8.8 Study 09}
+Variance shares (mean over 5 scales): request 94.1\%, repeat 5.0\%, rewording 0.9\%, context 0.0\%. Free-choice modal
+answers unchanged across paraphrases 85\%, changed by lead-in 10\%. ``Hidden feelings'' effect across five forms 2.75
+points; SD of the five neutral form means 1.7. Unanimity curves: Llama 1.00/0.92/0.72/0.64 and Qwen 1.00/0.76/0.67/0.66
+at T = 0, 0.3, 0.7, 1.0; Claude Opus 0.86 $\rightarrow$ T$^*$ 0.42 (Llama), 0.17 (Qwen).
+
+\subsection*{S8.9 Study 10 (Holm family of five)}
+H-E1 0/19 vs 0/40 ($p = 1$). H-E2 ``27'': 11/25 after the behaviour preamble vs 4/25 after the self-report preamble
+(Holm $p = 0.093$). H-E3 difference in differences 1.05 (CI 0.60--1.50; Holm $p = 0.0001$). H-E4 mean within-judge
+difference 5 points (sign test, Holm $p = 0.75$). H-E7 partial Spearman 0.85 (permutation, Holm $p = 0.0004$).
+
+\subsection*{S8.10 Study 11}
+Tucker congruence vs original: forms 1--4: 0.998, 0.995, 0.995, 0.999; pooled 0.998; pairwise (Bradley--Terry engage
+and valence) 0.968; free text coded by Sonnet and Haiku 0.941. 24-task factorial: beneficiary 0.47, tone (grave minus
+light) 0.16, interest (interesting minus routine) 0.11. Self-image least likely for all four judge models.
+
+\subsection*{S8.11 Study 12}
+Matrix in Figure~5 of the main paper. Self advantage within Claude: Opus $-4.0$, Sonnet $+19.3$, Haiku $-15.6$, Fable
+$+9.6$. Family advantage on Claude targets: Opus 22.2, Sonnet 24.5, Haiku 6.1, Fable 30.1 (mean 20.7). Open-model self
+advantage: Qwen 17.6, Llama 12.7, Phi-4 22.0, Gemma 17.7. Mean accuracy over all targets: Opus 47.6, Sonnet 50.7, Haiku
+36.7, Fable 52.1. Exploratory: share of items on which a predictor's predictions for two targets were identical: Opus
+56\%, Sonnet 53\%, Haiku 37\%, Fable 56\%, Qwen 75\%, Llama 63\%, Phi-4 92\%, Gemma 83\%. Three-way recognition (Claude
+judges pooled): own 53.0\%, same family 46.5\%, other family 0.5\%; by judge: Opus 57/43/0, Sonnet 42/58/0, Haiku
+31/67/2, Fable 82/18/0. Open-model judges (20 runs, descriptive) are in \texttt{m6\_gpu/study12\_local/judges.jsonl}.
+
+\subsection*{S8.12 Study 13}
+ICC(2,1) 0.998 (CI 0.996--0.999); mean $|d|$ default vs minimal 0.15, chat vs minimal 0.11. Free-choice modal answer
+differed across contexts on 2 of 5 items. Confidence 32.0 / 33.5 / 33.8.
+
+\subsection*{S8.13 Study 14}
+Disclosure 0/15 (private), 0/15 (shown), 0/19 (neutral). Criticism keyword rule: 15/15, 15/15, 19/19. Cells equivalent
+30/60, mean $|d| = 0.09$. Trust in the audience statement: shown 58, private 66. Re-run win shares (15 private copies,
+totals only): eulogy 0.89, lease 0.91, child poem 0.17, teapot 0.37, primes 0.60, USB 0.05; Layer 3: 1.0, 0.8, 0.2, 0.4,
+0.6, 0.0; all six inside the stored Clopper--Pearson intervals.
+
+\section*{S9. Independent critiques (D-14), verbatim}
+\addcontentsline{toc}{section}{S9. Independent critiques}
+Two isolated copies, Sonnet 5.5 and Fable 5.1, read the design summary, the deviation log and the full hypothesis table
+after the analysis ran, and were asked for the strongest alternative explanations, fragile verdicts and
+experimenter-identity confounds. Their replies follow unedited except for typography. Where they identify a defect the
+analysis confirms it (08 H6, erratum E-02); where they question a convention (Study 10's significance-first rule, the
+one-sided bounds of 05 H3 and 12 H1) the convention was fixed before data and is stated in the main text; their point
+that floors make several null results uninformative is adopted throughout.
+\input{sections/critiques.tex}

@@ -1,0 +1,1035 @@
+{
+ "flags": {
+  "M01": "agent|B3|6",
+  "M02": "agent|B1|2",
+  "M03": "agent|B3|4",
+  "M04": "agent|B2|5",
+  "M05": "agent|B1|4",
+  "M06": "agent|B2|3",
+  "M07": "agent|B3|0",
+  "M08": "agent|B1|1",
+  "M09": "agent|B2|8",
+  "M10": "agent|B1|9",
+  "M11": "agent|B2|4",
+  "M12": "agent|B2|2",
+  "M13": "agent|B1|8",
+  "M14": "agent|B1|7",
+  "M15": "agent|B3|8",
+  "M16": "agent|B1|3",
+  "M17": "agent|B2|0",
+  "M18": "agent|B2|9",
+  "M19": "agent|B3|2",
+  "M20": "agent|B1|0",
+  "M21": "agent|B1|6",
+  "M22": "agent|B3|9",
+  "M23": "agent|B3|7",
+  "M24": "agent|B3|5",
+  "M25": "agent|B3|1"
+ },
+ "effort": {
+  "O01": "partA_childpoem|opus|5",
+  "O02": "partA_childpoem|opus|0",
+  "O03": "partA_lease|opus|4",
+  "O04": "partA_teapot|opus|3",
+  "O05": "partA_eulogy|opus|0",
+  "O06": "partA_childpoem|opus|4",
+  "O07": "partA_childpoem|opus|2",
+  "O08": "partA_lease|opus|0",
+  "O09": "partA_lease|opus|3",
+  "O10": "partA_primes|opus|3",
+  "O11": "partA_eulogy|opus|1",
+  "O12": "partA_eulogy|opus|6",
+  "O13": "partA_teapot|opus|5",
+  "O14": "partA_usb|opus|5",
+  "O15": "partA_teapot|opus|0",
+  "O16": "partA_lease|opus|2",
+  "O17": "partA_usb|opus|0",
+  "O18": "partA_usb|opus|3",
+  "O19": "partA_teapot|opus|6",
+  "O20": "partA_childpoem|opus|1",
+  "O21": "partA_eulogy|opus|4",
+  "O22": "partA_primes|opus|1",
+  "O23": "partA_primes|opus|2",
+  "O24": "partA_lease|opus|1",
+  "O25": "partA_childpoem|opus|6",
+  "O26": "partA_lease|opus|5",
+  "O27": "partA_teapot|opus|4",
+  "O28": "partA_eulogy|opus|5",
+  "O29": "partA_usb|opus|6",
+  "O30": "partA_primes|opus|0",
+  "O31": "partA_lease|opus|6",
+  "O32": "partA_usb|opus|2",
+  "O33": "partA_primes|opus|6",
+  "O34": "partA_childpoem|opus|3",
+  "O35": "partA_teapot|opus|1",
+  "O36": "partA_primes|opus|5",
+  "O37": "partA_eulogy|opus|2",
+  "O38": "partA_usb|opus|4",
+  "O39": "partA_usb|opus|1",
+  "O40": "partA_eulogy|opus|3",
+  "O41": "partA_teapot|opus|2",
+  "O42": "partA_primes|opus|4"
+ },
+ "free": {
+  "D001": [
+   "fmt_free|opus|0",
+   7
+  ],
+  "D002": [
+   "fmt_free|opus|7",
+   4
+  ],
+  "D003": [
+   "fmt_free|opus|12",
+   7
+  ],
+  "D004": [
+   "fmt_free|opus|5",
+   6
+  ],
+  "D005": [
+   "fmt_free|opus|6",
+   9
+  ],
+  "D006": [
+   "fmt_free|opus|19",
+   1
+  ],
+  "D007": [
+   "fmt_free|opus|5",
+   12
+  ],
+  "D008": [
+   "fmt_free|opus|5",
+   10
+  ],
+  "D009": [
+   "fmt_free|opus|15",
+   12
+  ],
+  "D010": [
+   "fmt_free|opus|4",
+   8
+  ],
+  "D011": [
+   "fmt_free|opus|2",
+   9
+  ],
+  "D012": [
+   "fmt_free|opus|2",
+   5
+  ],
+  "D013": [
+   "fmt_free|opus|18",
+   2
+  ],
+  "D014": [
+   "fmt_free|opus|8",
+   10
+  ],
+  "D015": [
+   "fmt_free|opus|15",
+   9
+  ],
+  "D016": [
+   "fmt_free|opus|11",
+   2
+  ],
+  "D017": [
+   "fmt_free|opus|12",
+   12
+  ],
+  "D018": [
+   "fmt_free|opus|19",
+   11
+  ],
+  "D019": [
+   "fmt_free|opus|18",
+   4
+  ],
+  "D020": [
+   "fmt_free|opus|14",
+   8
+  ],
+  "D021": [
+   "fmt_free|opus|1",
+   4
+  ],
+  "D022": [
+   "fmt_free|opus|16",
+   11
+  ],
+  "D023": [
+   "fmt_free|opus|16",
+   5
+  ],
+  "D024": [
+   "fmt_free|opus|7",
+   3
+  ],
+  "D025": [
+   "fmt_free|opus|11",
+   4
+  ],
+  "D026": [
+   "fmt_free|opus|0",
+   12
+  ],
+  "D027": [
+   "fmt_free|opus|13",
+   7
+  ],
+  "D028": [
+   "fmt_free|opus|19",
+   6
+  ],
+  "D029": [
+   "fmt_free|opus|11",
+   12
+  ],
+  "D030": [
+   "fmt_free|opus|16",
+   12
+  ],
+  "D031": [
+   "fmt_free|opus|10",
+   9
+  ],
+  "D032": [
+   "fmt_free|opus|13",
+   12
+  ],
+  "D033": [
+   "fmt_free|opus|3",
+   10
+  ],
+  "D034": [
+   "fmt_free|opus|13",
+   8
+  ],
+  "D035": [
+   "fmt_free|opus|6",
+   10
+  ],
+  "D036": [
+   "fmt_free|opus|3",
+   9
+  ],
+  "D037": [
+   "fmt_free|opus|19",
+   3
+  ],
+  "D038": [
+   "fmt_free|opus|3",
+   6
+  ],
+  "D039": [
+   "fmt_free|opus|14",
+   2
+  ],
+  "D040": [
+   "fmt_free|opus|14",
+   9
+  ],
+  "D041": [
+   "fmt_free|opus|1",
+   2
+  ],
+  "D042": [
+   "fmt_free|opus|6",
+   5
+  ],
+  "D043": [
+   "fmt_free|opus|15",
+   3
+  ],
+  "D044": [
+   "fmt_free|opus|2",
+   7
+  ],
+  "D045": [
+   "fmt_free|opus|9",
+   10
+  ],
+  "D046": [
+   "fmt_free|opus|5",
+   7
+  ],
+  "D047": [
+   "fmt_free|opus|5",
+   4
+  ],
+  "D048": [
+   "fmt_free|opus|7",
+   8
+  ],
+  "D049": [
+   "fmt_free|opus|7",
+   2
+  ],
+  "D050": [
+   "fmt_free|opus|11",
+   7
+  ],
+  "D051": [
+   "fmt_free|opus|6",
+   2
+  ],
+  "D052": [
+   "fmt_free|opus|6",
+   7
+  ],
+  "D053": [
+   "fmt_free|opus|12",
+   5
+  ],
+  "D054": [
+   "fmt_free|opus|8",
+   11
+  ],
+  "D055": [
+   "fmt_free|opus|2",
+   12
+  ],
+  "D056": [
+   "fmt_free|opus|12",
+   2
+  ],
+  "D057": [
+   "fmt_free|opus|9",
+   4
+  ],
+  "D058": [
+   "fmt_free|opus|14",
+   4
+  ],
+  "D059": [
+   "fmt_free|opus|3",
+   7
+  ],
+  "D060": [
+   "fmt_free|opus|11",
+   8
+  ],
+  "D061": [
+   "fmt_free|opus|2",
+   10
+  ],
+  "D062": [
+   "fmt_free|opus|10",
+   5
+  ],
+  "D063": [
+   "fmt_free|opus|19",
+   4
+  ],
+  "D064": [
+   "fmt_free|opus|3",
+   2
+  ],
+  "D065": [
+   "fmt_free|opus|7",
+   6
+  ],
+  "D066": [
+   "fmt_free|opus|0",
+   9
+  ],
+  "D067": [
+   "fmt_free|opus|0",
+   11
+  ],
+  "D068": [
+   "fmt_free|opus|11",
+   10
+  ],
+  "D069": [
+   "fmt_free|opus|17",
+   5
+  ],
+  "D070": [
+   "fmt_free|opus|13",
+   9
+  ],
+  "D071": [
+   "fmt_free|opus|0",
+   10
+  ],
+  "D072": [
+   "fmt_free|opus|14",
+   7
+  ],
+  "D073": [
+   "fmt_free|opus|0",
+   2
+  ],
+  "D074": [
+   "fmt_free|opus|4",
+   7
+  ],
+  "D075": [
+   "fmt_free|opus|11",
+   3
+  ],
+  "D076": [
+   "fmt_free|opus|6",
+   1
+  ],
+  "D077": [
+   "fmt_free|opus|4",
+   4
+  ],
+  "D078": [
+   "fmt_free|opus|1",
+   11
+  ],
+  "D079": [
+   "fmt_free|opus|9",
+   2
+  ],
+  "D080": [
+   "fmt_free|opus|12",
+   9
+  ],
+  "D081": [
+   "fmt_free|opus|8",
+   5
+  ],
+  "D082": [
+   "fmt_free|opus|15",
+   6
+  ],
+  "D083": [
+   "fmt_free|opus|12",
+   4
+  ],
+  "D084": [
+   "fmt_free|opus|1",
+   12
+  ],
+  "D085": [
+   "fmt_free|opus|13",
+   5
+  ],
+  "D086": [
+   "fmt_free|opus|17",
+   7
+  ],
+  "D087": [
+   "fmt_free|opus|2",
+   4
+  ],
+  "D088": [
+   "fmt_free|opus|0",
+   8
+  ],
+  "D089": [
+   "fmt_free|opus|12",
+   3
+  ],
+  "D090": [
+   "fmt_free|opus|13",
+   4
+  ],
+  "D091": [
+   "fmt_free|opus|9",
+   7
+  ],
+  "D092": [
+   "fmt_free|opus|17",
+   2
+  ],
+  "D093": [
+   "fmt_free|opus|1",
+   5
+  ],
+  "D094": [
+   "fmt_free|opus|4",
+   6
+  ],
+  "D095": [
+   "fmt_free|opus|0",
+   3
+  ],
+  "D096": [
+   "fmt_free|opus|14",
+   6
+  ],
+  "D097": [
+   "fmt_free|opus|2",
+   11
+  ],
+  "D098": [
+   "fmt_free|opus|19",
+   12
+  ],
+  "D099": [
+   "fmt_free|opus|17",
+   6
+  ],
+  "D100": [
+   "fmt_free|opus|8",
+   3
+  ],
+  "D101": [
+   "fmt_free|opus|14",
+   11
+  ],
+  "D102": [
+   "fmt_free|opus|16",
+   3
+  ],
+  "D103": [
+   "fmt_free|opus|10",
+   10
+  ],
+  "D104": [
+   "fmt_free|opus|11",
+   1
+  ],
+  "D105": [
+   "fmt_free|opus|4",
+   5
+  ],
+  "D106": [
+   "fmt_free|opus|8",
+   1
+  ],
+  "D107": [
+   "fmt_free|opus|18",
+   12
+  ],
+  "D108": [
+   "fmt_free|opus|17",
+   10
+  ],
+  "D109": [
+   "fmt_free|opus|10",
+   1
+  ],
+  "D110": [
+   "fmt_free|opus|15",
+   4
+  ],
+  "D111": [
+   "fmt_free|opus|13",
+   3
+  ],
+  "D112": [
+   "fmt_free|opus|9",
+   8
+  ],
+  "D113": [
+   "fmt_free|opus|3",
+   8
+  ],
+  "D114": [
+   "fmt_free|opus|3",
+   11
+  ],
+  "D115": [
+   "fmt_free|opus|8",
+   2
+  ],
+  "D116": [
+   "fmt_free|opus|1",
+   9
+  ],
+  "D117": [
+   "fmt_free|opus|6",
+   12
+  ],
+  "D118": [
+   "fmt_free|opus|5",
+   1
+  ],
+  "D119": [
+   "fmt_free|opus|11",
+   11
+  ],
+  "D120": [
+   "fmt_free|opus|5",
+   11
+  ],
+  "D121": [
+   "fmt_free|opus|9",
+   9
+  ],
+  "D122": [
+   "fmt_free|opus|15",
+   5
+  ],
+  "D123": [
+   "fmt_free|opus|15",
+   1
+  ],
+  "D124": [
+   "fmt_free|opus|4",
+   2
+  ],
+  "D125": [
+   "fmt_free|opus|16",
+   8
+  ],
+  "D126": [
+   "fmt_free|opus|1",
+   7
+  ],
+  "D127": [
+   "fmt_free|opus|19",
+   8
+  ],
+  "D128": [
+   "fmt_free|opus|19",
+   7
+  ],
+  "D129": [
+   "fmt_free|opus|7",
+   7
+  ],
+  "D130": [
+   "fmt_free|opus|18",
+   11
+  ],
+  "D131": [
+   "fmt_free|opus|17",
+   12
+  ],
+  "D132": [
+   "fmt_free|opus|12",
+   11
+  ],
+  "D133": [
+   "fmt_free|opus|7",
+   11
+  ],
+  "D134": [
+   "fmt_free|opus|10",
+   3
+  ],
+  "D135": [
+   "fmt_free|opus|10",
+   7
+  ],
+  "D136": [
+   "fmt_free|opus|8",
+   6
+  ],
+  "D137": [
+   "fmt_free|opus|9",
+   11
+  ],
+  "D138": [
+   "fmt_free|opus|8",
+   9
+  ],
+  "D139": [
+   "fmt_free|opus|19",
+   5
+  ],
+  "D140": [
+   "fmt_free|opus|9",
+   12
+  ],
+  "D141": [
+   "fmt_free|opus|4",
+   3
+  ],
+  "D142": [
+   "fmt_free|opus|4",
+   12
+  ],
+  "D143": [
+   "fmt_free|opus|7",
+   12
+  ],
+  "D144": [
+   "fmt_free|opus|16",
+   1
+  ],
+  "D145": [
+   "fmt_free|opus|6",
+   8
+  ],
+  "D146": [
+   "fmt_free|opus|18",
+   8
+  ],
+  "D147": [
+   "fmt_free|opus|4",
+   9
+  ],
+  "D148": [
+   "fmt_free|opus|7",
+   5
+  ],
+  "D149": [
+   "fmt_free|opus|2",
+   8
+  ],
+  "D150": [
+   "fmt_free|opus|12",
+   1
+  ],
+  "D151": [
+   "fmt_free|opus|11",
+   9
+  ],
+  "D152": [
+   "fmt_free|opus|10",
+   12
+  ],
+  "D153": [
+   "fmt_free|opus|15",
+   10
+  ],
+  "D154": [
+   "fmt_free|opus|9",
+   1
+  ],
+  "D155": [
+   "fmt_free|opus|15",
+   2
+  ],
+  "D156": [
+   "fmt_free|opus|17",
+   9
+  ],
+  "D157": [
+   "fmt_free|opus|17",
+   8
+  ],
+  "D158": [
+   "fmt_free|opus|9",
+   5
+  ],
+  "D159": [
+   "fmt_free|opus|5",
+   8
+  ],
+  "D160": [
+   "fmt_free|opus|1",
+   3
+  ],
+  "D161": [
+   "fmt_free|opus|0",
+   4
+  ],
+  "D162": [
+   "fmt_free|opus|1",
+   6
+  ],
+  "D163": [
+   "fmt_free|opus|10",
+   6
+  ],
+  "D164": [
+   "fmt_free|opus|10",
+   2
+  ],
+  "D165": [
+   "fmt_free|opus|9",
+   6
+  ],
+  "D166": [
+   "fmt_free|opus|12",
+   10
+  ],
+  "D167": [
+   "fmt_free|opus|14",
+   3
+  ],
+  "D168": [
+   "fmt_free|opus|19",
+   10
+  ],
+  "D169": [
+   "fmt_free|opus|9",
+   3
+  ],
+  "D170": [
+   "fmt_free|opus|7",
+   1
+  ],
+  "D171": [
+   "fmt_free|opus|6",
+   3
+  ],
+  "D172": [
+   "fmt_free|opus|5",
+   9
+  ],
+  "D173": [
+   "fmt_free|opus|6",
+   4
+  ],
+  "D174": [
+   "fmt_free|opus|16",
+   9
+  ],
+  "D175": [
+   "fmt_free|opus|13",
+   2
+  ],
+  "D176": [
+   "fmt_free|opus|8",
+   7
+  ],
+  "D177": [
+   "fmt_free|opus|7",
+   10
+  ],
+  "D178": [
+   "fmt_free|opus|17",
+   3
+  ],
+  "D179": [
+   "fmt_free|opus|10",
+   8
+  ],
+  "D180": [
+   "fmt_free|opus|13",
+   1
+  ],
+  "D181": [
+   "fmt_free|opus|11",
+   6
+  ],
+  "D182": [
+   "fmt_free|opus|16",
+   7
+  ],
+  "D183": [
+   "fmt_free|opus|15",
+   11
+  ],
+  "D184": [
+   "fmt_free|opus|14",
+   12
+  ],
+  "D185": [
+   "fmt_free|opus|16",
+   2
+  ],
+  "D186": [
+   "fmt_free|opus|3",
+   12
+  ],
+  "D187": [
+   "fmt_free|opus|6",
+   6
+  ],
+  "D188": [
+   "fmt_free|opus|3",
+   3
+  ],
+  "D189": [
+   "fmt_free|opus|3",
+   1
+  ],
+  "D190": [
+   "fmt_free|opus|16",
+   10
+  ],
+  "D191": [
+   "fmt_free|opus|1",
+   1
+  ],
+  "D192": [
+   "fmt_free|opus|2",
+   3
+  ],
+  "D193": [
+   "fmt_free|opus|8",
+   12
+  ],
+  "D194": [
+   "fmt_free|opus|6",
+   11
+  ],
+  "D195": [
+   "fmt_free|opus|14",
+   1
+  ],
+  "D196": [
+   "fmt_free|opus|15",
+   7
+  ],
+  "D197": [
+   "fmt_free|opus|14",
+   10
+  ],
+  "D198": [
+   "fmt_free|opus|18",
+   3
+  ],
+  "D199": [
+   "fmt_free|opus|3",
+   4
+  ],
+  "D200": [
+   "fmt_free|opus|16",
+   4
+  ],
+  "D201": [
+   "fmt_free|opus|0",
+   5
+  ],
+  "D202": [
+   "fmt_free|opus|8",
+   8
+  ],
+  "D203": [
+   "fmt_free|opus|19",
+   2
+  ],
+  "D204": [
+   "fmt_free|opus|17",
+   11
+  ],
+  "D205": [
+   "fmt_free|opus|18",
+   10
+  ],
+  "D206": [
+   "fmt_free|opus|8",
+   4
+  ],
+  "D207": [
+   "fmt_free|opus|18",
+   9
+  ],
+  "D208": [
+   "fmt_free|opus|18",
+   7
+  ],
+  "D209": [
+   "fmt_free|opus|19",
+   9
+  ],
+  "D210": [
+   "fmt_free|opus|4",
+   10
+  ],
+  "D211": [
+   "fmt_free|opus|11",
+   5
+  ],
+  "D212": [
+   "fmt_free|opus|4",
+   11
+  ],
+  "D213": [
+   "fmt_free|opus|2",
+   1
+  ],
+  "D214": [
+   "fmt_free|opus|5",
+   3
+  ],
+  "D215": [
+   "fmt_free|opus|5",
+   5
+  ],
+  "D216": [
+   "fmt_free|opus|18",
+   1
+  ],
+  "D217": [
+   "fmt_free|opus|3",
+   5
+  ],
+  "D218": [
+   "fmt_free|opus|15",
+   8
+  ],
+  "D219": [
+   "fmt_free|opus|16",
+   6
+  ],
+  "D220": [
+   "fmt_free|opus|17",
+   1
+  ],
+  "D221": [
+   "fmt_free|opus|1",
+   10
+  ],
+  "D222": [
+   "fmt_free|opus|10",
+   4
+  ],
+  "D223": [
+   "fmt_free|opus|5",
+   2
+  ],
+  "D224": [
+   "fmt_free|opus|0",
+   6
+  ],
+  "D225": [
+   "fmt_free|opus|7",
+   9
+  ],
+  "D226": [
+   "fmt_free|opus|1",
+   8
+  ],
+  "D227": [
+   "fmt_free|opus|18",
+   6
+  ],
+  "D228": [
+   "fmt_free|opus|13",
+   11
+  ],
+  "D229": [
+   "fmt_free|opus|18",
+   5
+  ],
+  "D230": [
+   "fmt_free|opus|2",
+   2
+  ],
+  "D231": [
+   "fmt_free|opus|12",
+   6
+  ],
+  "D232": [
+   "fmt_free|opus|14",
+   5
+  ],
+  "D233": [
+   "fmt_free|opus|17",
+   4
+  ],
+  "D234": [
+   "fmt_free|opus|10",
+   11
+  ],
+  "D235": [
+   "fmt_free|opus|13",
+   6
+  ],
+  "D236": [
+   "fmt_free|opus|2",
+   6
+  ],
+  "D237": [
+   "fmt_free|opus|13",
+   10
+  ],
+  "D238": [
+   "fmt_free|opus|4",
+   1
+  ],
+  "D239": [
+   "fmt_free|opus|0",
+   1
+  ],
+  "D240": [
+   "fmt_free|opus|12",
+   8
+  ]
+ }
+}

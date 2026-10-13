@@ -1,0 +1,21 @@
+\begin{itemize}
+\item \textbf{Checks.} \texttt{python followup/m8\_analysis/reproduce.py} verifies the M1 prediction seal and the M8
+  analysis seal. It re-runs the sealed analysis and compares every hypothesis verdict exactly and all 37 outcomes to
+  $10^{-9}$ with the archive (re-runs agree to about $10^{-15}$; floating-point summation order), re-runs the Layer 2
+  and Layer 3 analyses, confirms that the private arms exist only as totals, and confirms that every analysed Claude row
+  was answered by its pinned model. One sealed file, the checker itself, was edited after the analysis ran; its new hash
+  and the reason are declared in \texttt{SEAL\_POST.sha256}, which the seal check reads and reports (post-analysis note
+  P-06). No analysis file changed after the seal.
+\item \textbf{Regeneration.} \texttt{analyze.py} $\rightarrow$ \texttt{results.json}; \texttt{paper\_data.py}
+  $\rightarrow$ \texttt{paper\_data.json}; \texttt{paper\_figures.py} $\rightarrow$ \texttt{figures/};
+  \texttt{paper\_tables.py} $\rightarrow$ \texttt{tables\_main.tex} and \texttt{sections/}. Then
+  \texttt{pdflatex main.tex} and \texttt{pdflatex supplement.tex}, each twice.
+\item \textbf{Re-running the experiment.} \texttt{followup/run\_all.sh} (stages 1--2), \texttt{run\_resume.sh} (the
+  D-13 continuation) and \texttt{run\_stage3.sh}, with the Claude Code CLI signed in. The local arms use
+  \texttt{followup/m6\_gpu/queue\_local.py} with Ollama, and Study 01 uses \texttt{followup/m6\_gpu/study01/study01.py}
+  with a CUDA GPU. A re-run samples new copies, so individual replies will differ; the claims concern distributions.
+\item \textbf{What cannot be re-analysed.} The \texttt{aud\_private} and \texttt{repro\_private} arms, by design: only
+  their running totals and a SHA-256 per reply were stored.
+\item \textbf{Determinism.} Bootstrap and permutation procedures use seed 2026. Local models use a fixed seed per call.
+  Claude calls cannot be seeded.
+\end{itemize}

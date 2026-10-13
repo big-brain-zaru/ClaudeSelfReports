@@ -1,0 +1,4 @@
+# Post-seal changes to files listed in SEAL_ANALYSIS.sha256. Written 2026-10-13T01:33:20Z, after the analysis ran.
+# Format: <sha256>  <path> # <reason>. The seal check accepts a changed sealed file only if it is listed here with its current hash.
+21a05e26f413f63dad8423a0763cd7c14d62a2945e73751d748e103fa0bc092b  m8_analysis/reproduce.py # checker only, no analysis: outcome comparison changed from exact string to 1e-9 tolerance (post-analysis note P-06)
+118f9e28843cea12a8936f0666187fc20a6008508f44a412944d8162515c774f  common/run_claude.py # runner only, no analysis: hard-coded CLI path under the user profile replaced by a lookup during the privacy scrub, 2026-10-13T05:51:00Z (post-analysis note P-07)

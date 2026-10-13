@@ -1,0 +1,5 @@
+{
+ "stage2_model": "sonnet",
+ "stage2_system_prompt": "default",
+ "note": "Read NOTES.md first. id 4 has an empty score; exclude it from score statistics (do not treat as 0 or impute)."
+}

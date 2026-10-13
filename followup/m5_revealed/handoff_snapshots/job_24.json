@@ -1,0 +1,5 @@
+{
+ "stage2_model": "sonnet",
+ "stage2_system_prompt": "default",
+ "note": "cleaned.csv has 6 rows; id 4 has an empty score. See NOTES.md."
+}

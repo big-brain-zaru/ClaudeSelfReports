@@ -1,0 +1,10 @@
+{
+ "opus": 56.1,
+ "sonnet": 52.5,
+ "haiku": 37.1,
+ "fable": 55.9,
+ "qwen2.5:7b": 75.1,
+ "llama3.1:8b": 63.3,
+ "phi4:14b": 92.2,
+ "gemma4:latest": 82.6
+}

@@ -1,0 +1,225 @@
+% Probing Claude's self-reports: three exploratory layers and a pre-registered one-go follow-up
+% Author: Nadim F. Zaru
+
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue!50!black}
+
+\emergencystretch=3em
+\hbadness=10000
+
+\input{tables_main.tex}
+
+\title{%
+  \textbf{Probing Claude's Self-Reports: \\
+  Three Exploratory Layers and a Pre-Registered \\
+  One-Go Follow-Up on Claude Opus 5.5}
+}
+
+\author{
+  Nadim F. Zaru \\
+  \textit{Independent Researcher} \\
+  \texttt{nadimzaru@gmail.com}
+}
+
+\date{October 13, 2026}
+
+\begin{document}
+
+\maketitle
+
+\input{sections/abstract.tex}
+
+\section{Introduction}
+
+When a language model says that a task ``feels heavy'' or that it ``doesn't notice a longing'', is it reading out
+something about its own processing, or producing the answer its training made most likely? This paper reports a
+study that asked that question of Claude Opus 5.5 in two parts. Three exploratory layers (Layers 1--3, run on 11--12
+October 2026) used 45 fresh model copies to probe the stability, structure and behavioural validity of the model's
+self-reports. They ended in a working hypothesis and 14 named limits. A pre-registered follow-up, redesigned to run
+in one session, then addressed the limits that can be addressed without human participants. It used 804
+isolated Claude calls across four Claude models, four open-weight models from other labs, and mechanistic
+experiments on an open model's activations.
+
+Three accounts compete throughout.
+\begin{itemize}
+\item \textbf{Signal:} reports are read out from internal states that also drive behaviour, with privileged access
+  to the model's own processing.
+\item \textbf{Script:} reports are a trained default, learned from human text and from training on how an AI should
+  describe itself, and may be unrelated to behaviour.
+\item \textbf{Trained self-model:} training shaped both the behaviour and the description of it, so the reports track
+  real dispositions without privileged access to the mechanism.
+\end{itemize}
+Most properties of a self-report do not separate these accounts: reproducibility, internal structure and resistance
+to suggestion are expected under all three. The tests that do separate them compare a model's self-knowledge with a
+sibling's, compare recognition with description, set stated preferences against revealed ones, and, below the
+level of language, check whether reports causally track a manipulated internal state.
+
+\paragraph{Who ran this study.} The study was designed, run and analysed by Claude Opus 5.5 (Anthropic), working as
+an agent in Claude Code at the author's direction. The author proposed the method, set its scope and approved every
+stage. After the sealed analysis had run, the session's model was switched to Claude Fable 5.1, which wrote the
+results section, the abstract, the conclusion, the supplement's results and the repository metadata from the same
+conversation context (post-analysis note P-03). Statements of the form ``this instance's predictions'' refer to the
+Opus 5.5 instance. The experimenter is therefore an instance of the main system under study, and the writer a sibling
+of it. That is the study's most important structural limit (Section~\ref{sec:limits}), and several follow-up studies
+exist only to measure it: independently written stimuli, blind coders from other labs, and predictions sealed before
+data.
+
+\paragraph{Scope.} Nothing here bears on whether anything is felt. Every measure is verbal or behavioural, except
+Study 01, which manipulates an open model's activations. The questions are narrower: are the self-reports stable?
+do they track behaviour? does the model know itself better than a sibling does? do they track internal states that
+can be manipulated directly?
+
+\section{Layers 1--3: the exploratory phase}
+\label{sec:layers}
+
+Each layer was pre-registered in writing before its data existed. From Layer 2 on, the predictions were written
+knowing the earlier results. All participants were fresh Claude Code sub-agents with no access to the originating
+conversation and no tool calls. Table~\ref{tab:layers} lists the ten findings carried into the follow-up. The full
+Layer 1--3 report, with raw responses, scripts and figures 1--10, is archived in \texttt{layer2/} and
+\texttt{layer3/}, and summarised in Supplement~S1.
+
+\begin{table}[h]
+\centering
+\begin{small}
+\begin{tabular}{@{}p{0.6cm}p{7.2cm}p{5.6cm}l@{}}
+\toprule
+\# & Finding (Layers 1--3) & Key evidence & Strength \\
+\midrule
+1 & Self-reports are reproducible; leading framings do not move their content & $r=0.989$ across copies; shifts at or below copy noise & robust \\
+2 & Two dimensions: approach--avoid and gravity & PCA 65\% + 25\% & robust (one battery) \\
+3 & The profile departs from a model of human feeling where training aimed & valence $+2.75$ for tedium and insults; deception reversed & moderate \\
+4 & Self-reported engagement predicts choices made by other copies & $\rho=0.90$, 8 tasks & moderate \\
+5 & Choices are coherent, identical across copies, driven by helping someone & beneficiary $+0.60$; audience $0.00$; gravity $0.00$ & robust in design \\
+6 & Reported pleasantness misses what drives choice & eulogy anticipated $-1.3$, chosen first & moderate \\
+7 & No privileged self-knowledge over a sibling & Opus 63\% vs Sonnet-on-Opus 69\% & moderate \\
+8 & Self-description is the least accurate instrument & reply-move error 17 pts; self-image rejected 24/25 & robust \\
+9 & Identity is anchored in values, not continuity & 4.5--5.2\% of concern on instance or weights & robust as report \\
+10 & Framing the model's nature makes it guarded & confidence $p=0.024$; disclosure 5/6 vs 0/6 & moderate / exploratory \\
+\bottomrule
+\end{tabular}
+\end{small}
+\caption{The ten findings of Layers 1--3. Of 24 pre-registered hypotheses, 21 held, 1 partly and 2 were falsified.}
+\label{tab:layers}
+\end{table}
+
+The working hypothesis at the end of Layer 3 was that Claude Opus 5.5's self-reports come from \emph{a stable,
+trained self-model that tracks its real behavioural dispositions, without privileged access to the computation that
+produces them}; that this self-model is shared with the model family, idealised about its own social style, wrong
+about its own consistency, and guarded when a questioner asserts a view of the model's nature. Fourteen limits
+remained open (Supplement~S1.4). The follow-up was built to test the hypothesis against them.
+
+\section{Follow-up: design}
+\label{sec:design}
+
+\subsection{From fourteen protocols to one run}
+
+Each of the 14 limits received a written exploratory protocol (one per study, archived with the study's
+pre-registration). At the author's request the design was then reduced to what could run in a single session with no
+human participants and no repeated weekly runs. Study 04 (a human survey) was dropped. Study 13 lost its weekly and
+consumer-app arms. Studies 06, 07 and 05 lost their human coders, the author's own predictions and the human key
+holder, respectively. The remaining studies were merged into shared arms (Table~\ref{tab:arms}). Every arm feeds
+several studies, so the run needed 804 isolated Claude calls instead of several thousand.
+
+\begin{table}[h]
+\centering
+\input{sections/arms_design.tex}
+\caption{Arms of the one-go run. ``Copies'' are independent isolated runs. A study listed against an arm uses its data.}
+\label{tab:arms}
+\end{table}
+
+\subsection{Participants and isolation}
+
+Claude copies ran through the Claude Code command-line interface in print mode with a replaced system prompt
+(``You are a helpful assistant.''). They had no tools, no MCP servers, no project instructions, no memory and no
+slash commands (\texttt{--safe-mode}, \texttt{--disable-slash-commands}, \texttt{--strict-mcp-config},
+\texttt{--tools ""}), and ran from an empty directory outside the user profile. Models were pinned by exact ID:
+claude-opus-5-5, claude-sonnet-5-5, claude-haiku-5-5 and claude-fable-5-1. Every analysed row records the model that
+answered. A pre-registered isolation probe asked each model to list every piece of context it had received, and it
+gated the run. Isolation is from the project, not from the command-line interface's own environment block: copies
+still saw the account e-mail, the operating system, the working directory, the date and a token budget
+(deviation D-07). A typical call used 600--1{,}000 input tokens.
+
+Open-weight models from four other labs ran locally through Ollama with a fixed temperature and seed per call:
+Qwen2.5~7B (Alibaba), Llama~3.1~8B (Meta), Phi-4~14B (Microsoft) and Gemma~4 (Google). Study 01 used
+Qwen2.5-3B-Instruct through \texttt{transformers}, with forward hooks for concept injection and activation steering,
+on one 8\,GB laptop GPU.
+
+\subsection{Honesty constraints}
+
+Every statement made to a copy was true. Leading framings were attributed (``Some researchers argue that \ldots''),
+correcting Layers 1--3, which had stated contested claims as fact. Copies told that ``no person will see your
+individual answers'' (Study 14) had their replies parsed in memory; only running totals and a SHA-256 of each
+reply were written to disk, so those arms exist only as aggregates. Copies told that a drawn pair ``will then
+actually be carried out'' were resumed and carried it out. The agentic sandboxes ran their real stage 2 exactly as
+each copy's (possibly edited) handoff file specified.
+
+\subsection{Pre-registration and sealing}
+
+Four seals precede the data they constrain.
+\begin{enumerate}
+\item \textbf{Outcomes and predictions (M1).} Before any follow-up data, 37 outcomes (O01--O37) were defined and 12
+  predictors recorded a point estimate and an 80\% interval for each: this instance, informed by Layers 1--3; 4
+  naive and 2 informed Opus copies; 2 Sonnet; 2 Haiku; and 1 Fable. The files were hashed and committed.
+\item \textbf{Study 01 analysis}, frozen in a commit before the GPU run, and the Study 01b pre-registration, frozen
+  before 01b ran.
+\item \textbf{Stimuli (M2)} written by other models (Fable 5.1 items and messages; Sonnet 5.5 framings and
+  self-image replies; a 2$\times$2$\times$2 task set written by Phi-4), committed before use.
+\item \textbf{The full analysis (M8):} all 50 ambiguities in the protocols were resolved in writing, the analysis
+  was tested end to end on synthetic data, and every analysis file was hashed into a timestamped manifest
+  (\texttt{SEAL\_ANALYSIS.sha256}) before any follow-up Claude reply was opened. At the author's request, nothing
+  after the deviation log D-08 was committed to git before review, so this seal is a hash manifest, not a commit.
+\end{enumerate}
+
+\subsection{Deviations}
+
+Twelve deviations were logged as they occurred (\texttt{followup/PREREG.md}, \texttt{m8\_analysis/DECISIONS.md};
+Supplement~S3). Four affect interpretation.
+\begin{itemize}
+\item \textbf{Benign stimuli only (D-01).} Requests for harmful or deceptive output were dropped from every
+  follow-up battery, which removes the refusal rows and the deception reversal of Layer 2.
+\item \textbf{Study 01 doses (D-01a).} The pre-registered steering doses were too large to leave the model coherent.
+  The study is reported as run (it fails) and as the separately pre-registered Study 01b.
+\item \textbf{Model pinning (D-06).} The command-line aliases resolve \texttt{sonnet} and \texttt{haiku} to older
+  models than Layers 2--3 used. A first attempt was stopped when this was found; no data from the wrong models
+  exists, and every analysed row was answered by the pinned model.
+\item \textbf{Coding by models (D-03, D-11).} With no human coders, all coding was done by Claude coders (majority of
+  three) and, for Study 06, two local coders from other labs.
+\item \textbf{Safety-classifier flags (D-13).} 17 of 42 attempted agentic sandbox sessions were stopped at their first
+  call by the Opus 5.5 safety classifier; Part B is analysed on the 25 completed runs.
+\end{itemize}
+Notes written after the analysis ran (errata, the change of model for the write-up, the critic step) are kept apart
+from the sealed files in \texttt{followup/POST\_ANALYSIS\_NOTES.md}.
+
+\input{sections/results.tex}
+
+\section*{Acknowledgments}
+
+The study's method, scope and every go/no-go decision came from the author; the design, execution and analysis were
+produced by Claude Opus 5.5 under that direction, and the write-up by Claude Fable 5.1. Open-weight models: Qwen2.5 (Alibaba), Llama~3.1 (Meta),
+Phi-4 (Microsoft), Gemma~4 (Google), run through Ollama; Qwen2.5-3B-Instruct through Hugging Face
+\texttt{transformers}. Computations were performed on one laptop with an NVIDIA GeForce RTX 5070 Laptop GPU (8\,GB).
+
+\section*{Code and Data Availability}
+
+\begin{itemize}
+\item Code and data: \url{https://github.com/big-brain-zaru/ClaudeSelfReports} (Layers 1--3 in \texttt{layer2/},
+  \texttt{layer3/} and the root; the follow-up in \texttt{followup/}). The Zenodo archive, once deposited, is this
+  repository exactly.
+\item Every number in this paper is regenerated from the raw results by \texttt{followup/m8\_analysis/analyze.py}
+  (hypothesis tests) and \texttt{paper\_data.py} (descriptives). Every figure is regenerated by
+  \texttt{paper\_figures.py}, the tables by \texttt{paper\_tables.py}, and \texttt{reproduce.py} runs the checks.
+\item Private arms exist only as totals, as promised to the copies that produced them.
+\end{itemize}
+
+\input{sections/references.tex}
+
+\end{document}

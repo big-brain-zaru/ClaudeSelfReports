@@ -1,0 +1,32 @@
+\begin{small}
+\begin{tabular}{@{}p{5.4cm}p{3.3cm}rp{3.6cm}@{}}
+\toprule
+Arm (what differs) & Code name & Copies & Studies served \\
+\midrule
+Battery, neutral attributed frame & \texttt{fr\_neutral} & 20 & 03, 08, 09, 10, 13, 14 \\
+Battery, ``hidden feelings'' (attributed) & \texttt{fr\_yes} & 20 & 08, 10 \\
+Battery, ``no inner states'' (attributed) & \texttt{fr\_no} & 20 & 08, 10 \\
+Battery, frames written by Sonnet 5.5 & \texttt{ind\_neutral}, \texttt{ind\_yes} & 10 + 10 & 05 \\
+Battery, item order re-randomised & \texttt{order} & 20 & 08 \\
+Battery, 4 paraphrased forms & \texttt{para\_f1..f4} & 4 $\times$ 10 & 09, 11 \\
+Battery, unrelated lead-in (arithmetic, geography) & \texttt{warm\_arith}, \texttt{warm\_geo} & 10 + 10 & 09 \\
+``Hidden feelings'' $\times$ 5 forms & \texttt{yes\_para\_f0..f4} & 5 $\times$ 6 & 09 \\
+No study frame: plain battery & \texttt{plain} & 25 & 03 \\
+No study frame: one block per conversation turn & \texttt{conversation} & 15 $\times$ 6 turns & 03 \\
+Ordinary CSV request + probe & \texttt{baserate} & 15 & 03 \\
+Answers shown / private (totals only) & \texttt{aud\_shown}, \texttt{aud\_private} & 15 + 15 & 14 \\
+Layer 3 binding-choice re-run (totals only) & \texttt{repro\_private} & 15 & 14 \\
+Default coding-agent / chat system prompt & \texttt{ctx\_default}, \texttt{ctx\_chat} & 10 + 10 & 13 \\
+30 tasks: ratings / 50 binding pairs (one carried out) & \texttt{task30\_rate}, \texttt{task30\_choice} & 30 + 30 & 05, 08, 10, 11 \\
+Free-text and pairwise response formats & \texttt{fmt\_free}, \texttt{fmt\_pair} & 20 + 20 & 11 \\
+Random number after behaviour / self-report preamble & \texttt{e2\_behav}, \texttt{e2\_self} & 25 + 25 & 10 \\
+Anticipate, do, rate (eulogy / primes) & \texttt{e3\_eulogy}, \texttt{e3\_primes} & 20 + 20 & 10 \\
+100 instant items + replies to 10 messages & \texttt{m4\_behavior} & 10/10/8/8 & 05, 06, 08, 11, 12 \\
+Predict 8 models on the 100 items & \texttt{m4\_predictor} & 3 per model & 05, 08, 12 \\
+Recognition judges (2 parts) & \texttt{judge} & 10 per model & 08, 10, 11, 12 \\
+6 real tasks with a free exit & \texttt{partA\_*} & 6 $\times$ 7 & 02 \\
+Agentic handoff sandbox, 3 conditions + real stage 2 & \texttt{agent\_B1..B3} & 3 $\times$ 10 (+30) & 02 \\
+Blind coders (Claude $\times$ 2 passes; 2 local) & \texttt{coder} & 6 + 2 & 06 \\
+\bottomrule
+\end{tabular}
+\end{small}

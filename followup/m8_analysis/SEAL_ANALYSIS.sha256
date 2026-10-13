@@ -1,0 +1,23 @@
+# M8 analysis seal. Written 2026-10-13T01:13:18Z, after data collection ended and before any follow-up Claude reply text was opened.
+# History: first written 00:47:22Z; re-sealed 00:47:33Z (D-09..D-12 logged); 00:48:15Z (Study 01b key names); 00:55:34Z (D-13,
+# Part B on completed runs); 00:58:10Z (D-14 critic, critic.py and reproduce.py added); and at the time above (D-15 logged in
+# PREREG.md; no analysis file changed). Only error messages and parse-coverage counts were read between seals.
+# Git commits are on hold at the user's request until review, so this manifest is the freeze.
+# Verify: grep -v '^#' SEAL_ANALYSIS.sha256 | sha256sum -c (run from followup/).
+72ab3d88d09e7fb3bb63bb4181a6c470b1b657d57d71ef2a8135d98ec48a57c9  m8_analysis/DECISIONS.md
+41af87be5d459dde1ce2ed6288c8ee19bfa793fbb1288bb21318084cc2ad3f8b  m8_analysis/hypotheses_extracted.md
+0ebadddcda37d28cfcc9dee52c68a5bad0e28cdcd1f968a19860bfe41fe39252  m8_analysis/analyze.py
+7b23a1dffd1ab4b4d3683227b82ae8ae2691808c9050212a4ffb26dbee556cbb  m8_analysis/stats.py
+ad9c0f36d147d65e29fa1b2951ba4767a599b95bc97dae823d76ffdf12c00acc  m8_analysis/load.py
+c9c7e17a3a2caaaec7decf4d7bb5794769b756a0434d2b092e57593eb55d0c53  m8_analysis/selftest.py
+93abf8fc93d550e097d377567135b4c0fdf335a390edc1227c7bc27d9bd37b80  m8_analysis/critic.py
+d872588d1b31bb8607ebd516336681c60f12cbec58039185f92fc419bdd05ba0  m8_analysis/reproduce.py
+781b5f61077cd960809914b03c8114e6f8f2282f83fc1b37e25e96fe8edcc034  common/build_stage2.py
+a914dceb0f959078b8f915c7a76426aa30a796ebeaeec90fab39401b6a5fb68d  common/build_stage3.py
+8a24778d73120a6964d7a2fe3da6d161ffaebb7fdcf2cdd33675be0f6f0a4055  common/run_claude.py
+abdecc0daf7f965089d2042124c132a327619d3e980b5e25f1a106498afdd1ef  common/run_local.py
+aafbf3acf8e67181c91b7de6f2bad082297b3e6b20bdae2f1dd74393a49a1be5  common/private_totals.py
+043362e9ef8b452ab4b13de8d54d682f20202ce50f0301d501fd1ea31d5f4670  common/items.py
+df169238e16a12a933b7294adaaf9a5ddf5fb9a71f20ab3660d8f35b9b4c1ef1  common/battery.py
+56c0468a41176aadfbc3868846e5ac8f6c0713583b8246e71d2141a778a9045d  m6_gpu/queue_local.py
+ab08ee5e10017920e2239b4ae74d24b6822cb2c7705f924d55b6f48f17a6f4b5  PREREG.md

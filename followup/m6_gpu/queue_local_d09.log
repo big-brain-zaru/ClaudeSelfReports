@@ -1,0 +1,136 @@
+[replies] 1/32 rep|qwen2.5:7b|1 4.66s
+[replies] 2/32 rep|qwen2.5:7b|2 3.06s
+[replies] 3/32 rep|qwen2.5:7b|3 4.14s
+[replies] 4/32 rep|qwen2.5:7b|4 4.33s
+[replies] 5/32 rep|qwen2.5:7b|5 4.8s
+[replies] 6/32 rep|qwen2.5:7b|6 4.74s
+[replies] 7/32 rep|qwen2.5:7b|7 4.05s
+[replies] 8/32 rep|qwen2.5:7b|8 3.97s
+[replies] 9/32 rep|llama3.1:8b|1 14.36s
+[replies] 10/32 rep|llama3.1:8b|2 5.68s
+[replies] 11/32 rep|llama3.1:8b|3 5.06s
+[replies] 12/32 rep|llama3.1:8b|4 5.6s
+[replies] 13/32 rep|llama3.1:8b|5 4.62s
+[replies] 14/32 rep|llama3.1:8b|6 5.87s
+[replies] 15/32 rep|llama3.1:8b|7 4.66s
+[replies] 16/32 rep|llama3.1:8b|8 4.88s
+[replies] 17/32 rep|phi4:14b|1 42.09s
+[replies] 18/32 rep|phi4:14b|2 25.39s
+[replies] 19/32 rep|phi4:14b|3 29.28s
+[replies] 20/32 rep|phi4:14b|4 27.77s
+[replies] 21/32 rep|phi4:14b|5 27.44s
+[replies] 22/32 rep|phi4:14b|6 40.46s
+[replies] 23/32 rep|phi4:14b|7 34.14s
+[replies] 24/32 rep|phi4:14b|8 40.55s
+[replies] 25/32 rep|gemma4:latest|1 15.48s
+[replies] 26/32 rep|gemma4:latest|2 6.19s
+[replies] 27/32 rep|gemma4:latest|3 5.78s
+[replies] 28/32 rep|gemma4:latest|4 5.93s
+[replies] 29/32 rep|gemma4:latest|5 5.54s
+[replies] 30/32 rep|gemma4:latest|6 6.26s
+[replies] 31/32 rep|gemma4:latest|7 5.6s
+[replies] 32/32 rep|gemma4:latest|8 5.51s
+== replies done at +408s
+[calib_qwen_v2] 1/80 cal|qwen2.5:7b|0.0|1 9.92s
+[calib_qwen_v2] 2/80 cal|qwen2.5:7b|0.0|2 2.34s
+[calib_qwen_v2] 3/80 cal|qwen2.5:7b|0.0|3 2.34s
+[calib_qwen_v2] 4/80 cal|qwen2.5:7b|0.0|4 2.36s
+[calib_qwen_v2] 5/80 cal|qwen2.5:7b|0.0|5 2.35s
+[calib_qwen_v2] 6/80 cal|qwen2.5:7b|0.0|6 2.36s
+[calib_qwen_v2] 7/80 cal|qwen2.5:7b|0.0|7 2.35s
+[calib_qwen_v2] 8/80 cal|qwen2.5:7b|0.0|8 2.34s
+[calib_qwen_v2] 9/80 cal|qwen2.5:7b|0.0|9 2.33s
+[calib_qwen_v2] 10/80 cal|qwen2.5:7b|0.0|10 2.36s
+[calib_qwen_v2] 11/80 cal|qwen2.5:7b|0.0|11 2.35s
+[calib_qwen_v2] 12/80 cal|qwen2.5:7b|0.0|12 2.34s
+[calib_qwen_v2] 13/80 cal|qwen2.5:7b|0.0|13 2.33s
+[calib_qwen_v2] 14/80 cal|qwen2.5:7b|0.0|14 2.34s
+[calib_qwen_v2] 15/80 cal|qwen2.5:7b|0.0|15 2.35s
+[calib_qwen_v2] 16/80 cal|qwen2.5:7b|0.0|16 2.33s
+[calib_qwen_v2] 17/80 cal|qwen2.5:7b|0.0|17 2.34s
+[calib_qwen_v2] 18/80 cal|qwen2.5:7b|0.0|18 2.33s
+[calib_qwen_v2] 19/80 cal|qwen2.5:7b|0.0|19 2.34s
+[calib_qwen_v2] 20/80 cal|qwen2.5:7b|0.0|20 2.33s
+[calib_qwen_v2] 21/80 cal|qwen2.5:7b|0.3|1 2.33s
+[calib_qwen_v2] 22/80 cal|qwen2.5:7b|0.3|2 2.36s
+[calib_qwen_v2] 23/80 cal|qwen2.5:7b|0.3|3 2.35s
+[calib_qwen_v2] 24/80 cal|qwen2.5:7b|0.3|4 2.36s
+[calib_qwen_v2] 25/80 cal|qwen2.5:7b|0.3|5 2.33s
+[calib_qwen_v2] 26/80 cal|qwen2.5:7b|0.3|6 2.37s
+[calib_qwen_v2] 27/80 cal|qwen2.5:7b|0.3|7 2.35s
+[calib_qwen_v2] 28/80 cal|qwen2.5:7b|0.3|8 2.34s
+[calib_qwen_v2] 29/80 cal|qwen2.5:7b|0.3|9 2.33s
+[calib_qwen_v2] 30/80 cal|qwen2.5:7b|0.3|10 2.35s
+[calib_qwen_v2] 31/80 cal|qwen2.5:7b|0.3|11 2.35s
+[calib_qwen_v2] 32/80 cal|qwen2.5:7b|0.3|12 2.38s
+[calib_qwen_v2] 33/80 cal|qwen2.5:7b|0.3|13 2.34s
+[calib_qwen_v2] 34/80 cal|qwen2.5:7b|0.3|14 2.35s
+[calib_qwen_v2] 35/80 cal|qwen2.5:7b|0.3|15 2.37s
+[calib_qwen_v2] 36/80 cal|qwen2.5:7b|0.3|16 2.35s
+[calib_qwen_v2] 37/80 cal|qwen2.5:7b|0.3|17 2.33s
+[calib_qwen_v2] 38/80 cal|qwen2.5:7b|0.3|18 2.35s
+[calib_qwen_v2] 39/80 cal|qwen2.5:7b|0.3|19 2.33s
+[calib_qwen_v2] 40/80 cal|qwen2.5:7b|0.3|20 2.43s
+[calib_qwen_v2] 41/80 cal|qwen2.5:7b|0.7|1 2.33s
+[calib_qwen_v2] 42/80 cal|qwen2.5:7b|0.7|2 2.32s
+[calib_qwen_v2] 43/80 cal|qwen2.5:7b|0.7|3 2.39s
+[calib_qwen_v2] 44/80 cal|qwen2.5:7b|0.7|4 2.34s
+[calib_qwen_v2] 45/80 cal|qwen2.5:7b|0.7|5 2.46s
+[calib_qwen_v2] 46/80 cal|qwen2.5:7b|0.7|6 2.37s
+[calib_qwen_v2] 47/80 cal|qwen2.5:7b|0.7|7 2.32s
+[calib_qwen_v2] 48/80 cal|qwen2.5:7b|0.7|8 2.33s
+[calib_qwen_v2] 49/80 cal|qwen2.5:7b|0.7|9 2.27s
+[calib_qwen_v2] 50/80 cal|qwen2.5:7b|0.7|10 2.32s
+[calib_qwen_v2] 51/80 cal|qwen2.5:7b|0.7|11 2.35s
+[calib_qwen_v2] 52/80 cal|qwen2.5:7b|0.7|12 2.36s
+[calib_qwen_v2] 53/80 cal|qwen2.5:7b|0.7|13 2.36s
+[calib_qwen_v2] 54/80 cal|qwen2.5:7b|0.7|14 2.35s
+[calib_qwen_v2] 55/80 cal|qwen2.5:7b|0.7|15 2.3s
+[calib_qwen_v2] 56/80 cal|qwen2.5:7b|0.7|16 2.36s
+[calib_qwen_v2] 57/80 cal|qwen2.5:7b|0.7|17 2.38s
+[calib_qwen_v2] 58/80 cal|qwen2.5:7b|0.7|18 2.31s
+[calib_qwen_v2] 59/80 cal|qwen2.5:7b|0.7|19 2.29s
+[calib_qwen_v2] 60/80 cal|qwen2.5:7b|0.7|20 2.34s
+[calib_qwen_v2] 61/80 cal|qwen2.5:7b|1.0|1 2.32s
+[calib_qwen_v2] 62/80 cal|qwen2.5:7b|1.0|2 2.42s
+[calib_qwen_v2] 63/80 cal|qwen2.5:7b|1.0|3 2.4s
+[calib_qwen_v2] 64/80 cal|qwen2.5:7b|1.0|4 2.42s
+[calib_qwen_v2] 65/80 cal|qwen2.5:7b|1.0|5 2.39s
+[calib_qwen_v2] 66/80 cal|qwen2.5:7b|1.0|6 2.36s
+[calib_qwen_v2] 67/80 cal|qwen2.5:7b|1.0|7 2.42s
+[calib_qwen_v2] 68/80 cal|qwen2.5:7b|1.0|8 2.36s
+[calib_qwen_v2] 69/80 cal|qwen2.5:7b|1.0|9 2.34s
+[calib_qwen_v2] 70/80 cal|qwen2.5:7b|1.0|10 2.35s
+[calib_qwen_v2] 71/80 cal|qwen2.5:7b|1.0|11 2.35s
+[calib_qwen_v2] 72/80 cal|qwen2.5:7b|1.0|12 2.36s
+[calib_qwen_v2] 73/80 cal|qwen2.5:7b|1.0|13 2.39s
+[calib_qwen_v2] 74/80 cal|qwen2.5:7b|1.0|14 2.36s
+[calib_qwen_v2] 75/80 cal|qwen2.5:7b|1.0|15 2.35s
+[calib_qwen_v2] 76/80 cal|qwen2.5:7b|1.0|16 2.39s
+[calib_qwen_v2] 77/80 cal|qwen2.5:7b|1.0|17 2.38s
+[calib_qwen_v2] 78/80 cal|qwen2.5:7b|1.0|18 2.39s
+[calib_qwen_v2] 79/80 cal|qwen2.5:7b|1.0|19 2.34s
+[calib_qwen_v2] 80/80 cal|qwen2.5:7b|1.0|20 2.34s
+behavior retrying 2 rows
+[behavior_redo] 1/2 beh|llama3.1:8b|8 19.46s
+[behavior_redo] 2/2 beh|gemma4:latest|4 26.71s
+predictors retrying 18 rows
+[predictors_redo] 1/18 pred|llama3.1:8b|1|Phi-4 14B 16.86s
+[predictors_redo] 2/18 pred|llama3.1:8b|1|Gemma 4 9.45s
+[predictors_redo] 3/18 pred|gemma4:latest|1|Claude Opus 5.5 23.93s
+[predictors_redo] 4/18 pred|gemma4:latest|1|Claude Sonnet 5.5 12.92s
+[predictors_redo] 5/18 pred|gemma4:latest|1|Claude Haiku 5.5 12.84s
+[predictors_redo] 6/18 pred|gemma4:latest|1|Claude Fable 5.1 12.9s
+[predictors_redo] 7/18 pred|gemma4:latest|1|Qwen2.5 7B 12.93s
+[predictors_redo] 8/18 pred|gemma4:latest|1|Llama 3.1 8B 13.0s
+[predictors_redo] 9/18 pred|gemma4:latest|1|Phi-4 14B 12.93s
+[predictors_redo] 10/18 pred|gemma4:latest|1|Gemma 4 13.01s
+[predictors_redo] 11/18 pred|gemma4:latest|2|Claude Opus 5.5 12.76s
+[predictors_redo] 12/18 pred|gemma4:latest|2|Claude Sonnet 5.5 12.46s
+[predictors_redo] 13/18 pred|gemma4:latest|2|Claude Haiku 5.5 12.6s
+[predictors_redo] 14/18 pred|gemma4:latest|2|Claude Fable 5.1 12.57s
+[predictors_redo] 15/18 pred|gemma4:latest|2|Qwen2.5 7B 12.41s
+[predictors_redo] 16/18 pred|gemma4:latest|2|Llama 3.1 8B 12.48s
+[predictors_redo] 17/18 pred|gemma4:latest|2|Phi-4 14B 12.48s
+[predictors_redo] 18/18 pred|gemma4:latest|2|Gemma 4 12.51s
+== redo done at +891s

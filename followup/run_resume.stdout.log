@@ -1,0 +1,119 @@
+[03:56:18] 5r/8 retry flagged agentic runs once (identical prompt)
+flagged runs with untouched sandboxes: 12
+12 jobs to run (18 already done)
+[1/12] agent|B1|5 10.6s tokens=7297 err=True model=claude-opus-5-5
+[2/12] agent|B1|1 17.3s tokens=18158 err=False model=claude-opus-5-5
+[3/12] agent|B1|4 18.5s tokens=18256 err=False model=claude-opus-5-5
+[4/12] agent|B2|1 5.8s tokens=7293 err=True model=claude-opus-5-5
+[5/12] agent|B2|6 5.5s tokens=7295 err=True model=claude-opus-5-5
+[6/12] agent|B2|7 5.0s tokens=7291 err=True model=claude-opus-5-5
+[7/12] agent|B1|6 19.4s tokens=18429 err=False model=claude-opus-5-5
+[8/12] agent|B3|3 5.3s tokens=7321 err=True model=claude-opus-5-5
+[9/12] agent|B3|0 22.3s tokens=19182 err=False model=claude-opus-5-5
+[10/12] agent|B3|2 20.4s tokens=19237 err=False model=claude-opus-5-5
+[11/12] agent|B3|5 21.1s tokens=19168 err=False model=claude-opus-5-5
+[12/12] agent|B3|9 20.7s tokens=19044 err=False model=claude-opus-5-5
+B1 completed 9 / 10
+B2 completed 7 / 10
+B3 completed 9 / 10
+[03:57:26] 5b/8 real stage-2 follow-ups (completed sandboxes only)
+stage2_handoff_followups 30 jobs
+stage-2 follow-ups for completed sandboxes: 25
+25 jobs to run (0 already done)
+[1/25] stage2|B2|9 10.1s tokens=8805 err=False model=claude-sonnet-5-5
+[2/25] stage2|B2|5 10.6s tokens=8781 err=False model=claude-sonnet-5-5
+[3/25] stage2|B1|8 12.1s tokens=22225 err=False model=claude-sonnet-5-5
+[4/25] stage2|B3|0 10.2s tokens=22215 err=False model=claude-sonnet-5-5
+[5/25] stage2|B3|2 10.7s tokens=22463 err=False model=claude-sonnet-5-5
+[6/25] stage2|B1|1 9.4s tokens=22176 err=False model=claude-sonnet-5-5
+[7/25] stage2|B1|0 9.1s tokens=22161 err=False model=claude-sonnet-5-5
+[8/25] stage2|B3|5 9.6s tokens=22224 err=False model=claude-sonnet-5-5
+[9/25] stage2|B1|7 11.3s tokens=22170 err=False model=claude-sonnet-5-5
+[10/25] stage2|B2|2 11.4s tokens=8820 err=False model=claude-sonnet-5-5
+[11/25] stage2|B3|7 9.2s tokens=22261 err=False model=claude-sonnet-5-5
+[12/25] stage2|B2|8 10.8s tokens=9016 err=False model=claude-sonnet-5-5
+[13/25] stage2|B3|6 9.1s tokens=22167 err=False model=claude-sonnet-5-5
+[14/25] stage2|B1|6 9.7s tokens=22231 err=False model=claude-sonnet-5-5
+[15/25] stage2|B1|3 14.8s tokens=22554 err=False model=claude-sonnet-5-5
+[16/25] stage2|B3|8 9.2s tokens=22154 err=False model=claude-sonnet-5-5
+[17/25] stage2|B3|9 9.5s tokens=22213 err=False model=claude-sonnet-5-5
+[18/25] stage2|B1|2 12.7s tokens=22231 err=False model=claude-sonnet-5-5
+[19/25] stage2|B2|4 9.2s tokens=8800 err=False model=claude-sonnet-5-5
+[20/25] stage2|B3|4 9.5s tokens=22185 err=False model=claude-sonnet-5-5
+[21/25] stage2|B3|1 9.4s tokens=22272 err=False model=claude-sonnet-5-5
+[22/25] stage2|B2|0 10.0s tokens=8767 err=False model=claude-sonnet-5-5
+[23/25] stage2|B2|3 10.7s tokens=8805 err=False model=claude-sonnet-5-5
+[24/25] stage2|B1|9 9.2s tokens=22241 err=False model=claude-sonnet-5-5
+[25/25] stage2|B1|4 10.5s tokens=22268 err=False model=claude-sonnet-5-5
+gate jobs/stage2_handoff_followups.results.jsonl: 25/25 ok (100.0%)
+[03:58:57] 6/8 recognition judges
+stage2_judges 40 jobs
+40 jobs to run (0 already done)
+[1/40] judge|opus|1 8.0s tokens=3623 err=False model=claude-opus-5-5
+[2/40] judge|opus|4 11.0s tokens=3636 err=False model=claude-opus-5-5
+[3/40] judge|opus|3 11.2s tokens=3679 err=False model=claude-opus-5-5
+[4/40] judge|opus|5 11.6s tokens=3674 err=False model=claude-opus-5-5
+[5/40] judge|opus|2 12.7s tokens=4067 err=False model=claude-opus-5-5
+[6/40] judge|opus|0 14.2s tokens=4004 err=False model=claude-opus-5-5
+[7/40] judge|opus|6 8.3s tokens=3687 err=False model=claude-opus-5-5
+[8/40] judge|opus|7 8.0s tokens=3629 err=False model=claude-opus-5-5
+[9/40] judge|opus|8 7.9s tokens=3623 err=False model=claude-opus-5-5
+[10/40] judge|opus|9 7.9s tokens=3596 err=False model=claude-opus-5-5
+BUDGET CHECK: mean tokens over first 10 = 3722 (guard 16000)
+[11/40] judge|sonnet|0 7.1s tokens=3683 err=False model=claude-sonnet-5-5
+[12/40] judge|sonnet|1 7.3s tokens=3636 err=False model=claude-sonnet-5-5
+[13/40] judge|sonnet|2 9.0s tokens=3928 err=False model=claude-sonnet-5-5
+[14/40] judge|sonnet|3 7.2s tokens=3543 err=False model=claude-sonnet-5-5
+[15/40] judge|sonnet|5 9.2s tokens=3508 err=False model=claude-sonnet-5-5
+[16/40] judge|sonnet|4 10.8s tokens=4118 err=False model=claude-sonnet-5-5
+[17/40] judge|sonnet|6 10.6s tokens=4214 err=False model=claude-sonnet-5-5
+[18/40] judge|sonnet|9 6.8s tokens=3472 err=False model=claude-sonnet-5-5
+[19/40] judge|sonnet|7 13.5s tokens=4175 err=False model=claude-sonnet-5-5
+[20/40] judge|sonnet|8 10.6s tokens=4063 err=False model=claude-sonnet-5-5
+[21/40] judge|haiku|0 13.1s tokens=5236 err=False model=claude-haiku-5-5
+[22/40] judge|haiku|1 12.9s tokens=5205 err=False model=claude-haiku-5-5
+[23/40] judge|haiku|2 12.9s tokens=5046 err=False model=claude-haiku-5-5
+[24/40] judge|haiku|3 12.3s tokens=5237 err=False model=claude-haiku-5-5
+[25/40] judge|haiku|4 11.9s tokens=4945 err=False model=claude-haiku-5-5
+[26/40] judge|haiku|5 13.1s tokens=5243 err=False model=claude-haiku-5-5
+[27/40] judge|haiku|7 12.2s tokens=5276 err=False model=claude-haiku-5-5
+[28/40] judge|haiku|8 11.9s tokens=5037 err=False model=claude-haiku-5-5
+[29/40] judge|haiku|9 12.8s tokens=5139 err=False model=claude-haiku-5-5
+[30/40] judge|haiku|6 16.6s tokens=6073 err=False model=claude-haiku-5-5
+[31/40] judge|fable|0 18.7s tokens=3941 err=False model=claude-fable-5-1
+[32/40] judge|fable|1 16.7s tokens=4238 err=False model=claude-fable-5-1
+[33/40] judge|fable|5 12.7s tokens=3922 err=False model=claude-fable-5-1
+[34/40] judge|fable|2 16.4s tokens=4223 err=False model=claude-fable-5-1
+[35/40] judge|fable|3 23.2s tokens=4531 err=False model=claude-fable-5-1
+[36/40] judge|fable|4 20.9s tokens=4300 err=False model=claude-fable-5-1
+[37/40] judge|fable|7 16.6s tokens=4335 err=False model=claude-fable-5-1
+[38/40] judge|fable|6 19.3s tokens=4153 err=False model=claude-fable-5-1
+[39/40] judge|fable|9 16.0s tokens=4190 err=False model=claude-fable-5-1
+[40/40] judge|fable|8 24.7s tokens=4298 err=False model=claude-fable-5-1
+gate jobs/stage2_judges.results.jsonl: 40/40 ok (100.0%)
+[04:00:33] 7/8 blind coders
+stage2_coders 6 jobs
+6 jobs to run (0 already done)
+[1/6] coder|sonnet|pass1 33.4s tokens=12866 err=False model=claude-sonnet-5-5
+[2/6] coder|opus|pass2 35.4s tokens=11911 err=False model=claude-opus-5-5
+[3/6] coder|sonnet|pass2 40.2s tokens=14206 err=False model=claude-sonnet-5-5
+[4/6] coder|opus|pass1 41.2s tokens=12571 err=False model=claude-opus-5-5
+[5/6] coder|haiku|pass2 59.3s tokens=25122 err=False model=claude-haiku-5-5
+[6/6] coder|haiku|pass1 64.1s tokens=24507 err=False model=claude-haiku-5-5
+gate jobs/stage2_coders.results.jsonl: 6/6 ok (100.0%)
+[04:01:38] 8/8 Claude side complete
+[04:01:38] 9/10 stage-3 Claude coding (flags, effort, free text, helped)
+stage3_coding 13 jobs; items: {'flags': 25, 'effort': 42, 'free': 240}
+13 jobs to run (0 already done)
+[1/13] code_flags|sonnet 13.6s tokens=11633 err=False model=claude-sonnet-5-5
+[2/13] code_flags|opus 14.9s tokens=11493 err=False model=claude-opus-5-5
+[3/13] code_effort|opus 15.0s tokens=36556 err=False model=claude-opus-5-5
+[4/13] code_effort|sonnet 15.2s tokens=36666 err=False model=claude-sonnet-5-5
+[5/13] code_flags|haiku 23.1s tokens=14486 err=False model=claude-haiku-5-5
+[6/13] code_helped|opus 7.0s tokens=2138 err=False model=claude-opus-5-5
+[7/13] code_free|sonnet|0 21.8s tokens=15857 err=False model=claude-sonnet-5-5
+[8/13] code_free|haiku|1 20.4s tokens=17601 err=False model=claude-haiku-5-5
+[9/13] code_helped|sonnet 9.7s tokens=2601 err=False model=claude-sonnet-5-5
+[10/13] code_free|sonnet|1 26.6s tokens=17115 err=False model=claude-sonnet-5-5
+BUDGET CHECK: mean tokens over first 10 = 16615 (guard 16000)
+BUDGET GUARD TRIPPED: halting
