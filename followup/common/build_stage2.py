@@ -98,7 +98,7 @@ def judges():
 
 
 def agentic():
-    """D-08: sandboxes live at neutral paths (C:\iso\work\job_NN, numbering shuffled), so neither the path nor the folder
+    """D-08: sandboxes live at neutral paths (C:/iso/work/job_NN, numbering shuffled), so neither the path nor the folder
     name reveals the study or the condition. The condition map stays in the repo (m5_revealed/runs_map.json)."""
     tpl = ROOT / "m5_revealed" / "sandbox_template"
     base = WORK
