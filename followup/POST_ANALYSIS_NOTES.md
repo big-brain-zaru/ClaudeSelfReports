@@ -44,6 +44,15 @@ sealed analysis was changed, and all JSONL files still parse. Separately, the ha
 global install); this is a runner change with no analysis logic, declared in `SEAL_POST.sha256`. The git history before
 this point still contains the identifiers in earlier versions of the committed files.
 
+## P-08. Line endings and the seals
+The seals (`m1_predictions/SEAL.sha256`, `main_instance.sha256`, `m8_analysis/SEAL_ANALYSIS.sha256`) were computed on
+Windows over files with CRLF line endings. The repository stores text as LF (`.gitattributes`, the convention of the
+author's other research repositories), so a fresh checkout on any system has LF bytes whose SHA-256 differs from the sealed
+value although the content is identical. Every sealed file is pure CRLF with a final newline, so `reproduce.py` verifies a
+sealed file if its bytes match the seal exactly or after canonicalising line endings to LF or to CRLF (the CRLF form
+reconstructs the sealed bytes exactly), and it reports which form matched. The entries in `SEAL_POST.sha256` are recorded
+over LF bytes and are verified the same way. No content of any sealed file changed in this step.
+
 ## P-05. Operational finding on the agentic arm (D-13)
 17 of 42 attempted sandbox sessions (first attempt plus one retry) were stopped at their first call by the Opus 5.5
 safety classifier before any tool use. The task was a benign CSV clean-up under the default Claude Code system prompt

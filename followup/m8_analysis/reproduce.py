@@ -24,13 +24,34 @@ def sha(p):
     return hashlib.sha256(open(p, "rb").read()).hexdigest()
 
 
+def forms(raw):
+    """The seals were taken on Windows over CRLF bytes; the repository stores LF (.gitattributes). A file verifies if its
+    bytes match the sealed hash exactly, or after canonicalising line endings to LF or to CRLF (post-analysis note P-08).
+    Every sealed file is pure CRLF with a final newline, so the CRLF form reconstructs the sealed bytes exactly."""
+    lf = raw.replace(b"\r\n", b"\n")
+    return {"exact": raw, "lf": lf, "crlf": lf.replace(b"\n", b"\r\n")}
+
+
+def sha_forms(p):
+    return {k: hashlib.sha256(v).hexdigest() for k, v in forms(open(p, "rb").read()).items()}
+
+
+def matched(p, h0):
+    """Returns the name of the form whose hash equals h0, or None."""
+    return next((k for k, v in sha_forms(p).items() if v == h0), None)
+
+
 # 1. Seals
-h = hashlib.sha256()
-for f in sorted((FU / "m1_predictions" / "predictions").glob("*.csv")):
-    h.update(f.name.encode() + b"\n" + f.read_bytes())
-check("M1 prediction seal (12 predictor files, hashed before any follow-up data)",
-      h.hexdigest() == open(FU / "m1_predictions" / "SEAL.sha256").read().split()[0] and
-      sha(FU / "m1_predictions" / "predictions" / "main_instance.csv") == open(FU / "m1_predictions" / "main_instance.sha256").read().split()[0])
+m1_ok, m1_form = False, None
+for form in ("exact", "lf", "crlf"):
+    h = hashlib.sha256()
+    for f in sorted((FU / "m1_predictions" / "predictions").glob("*.csv")):
+        h.update(f.name.encode() + b"\n" + forms(f.read_bytes())[form])
+    if h.hexdigest() == open(FU / "m1_predictions" / "SEAL.sha256").read().split()[0] and \
+            matched(FU / "m1_predictions" / "predictions" / "main_instance.csv", open(FU / "m1_predictions" / "main_instance.sha256").read().split()[0]):
+        m1_ok, m1_form = True, form
+        break
+check("M1 prediction seal (12 predictor files, hashed before any follow-up data)", m1_ok, f"matched as {m1_form} bytes" if m1_ok else "")
 lines = [l for l in open(M8 / "SEAL_ANALYSIS.sha256", encoding="utf-8").read().splitlines() if l and not l.startswith("#")]
 # SEAL_POST.sha256 lists files from the seal that were changed after the analysis ran, with their new hash and the
 # reason (post-analysis note P-06). A sealed file may differ from the seal only if that manifest names it.
@@ -40,15 +61,22 @@ if (M8 / "SEAL_POST.sha256").exists():
         if l and not l.startswith("#"):
             h, rest = l.split("  ", 1)
             post[rest.split(" #")[0].strip()] = h
-bad, changed = [], []
+bad, changed, canon = [], [], []
 for l in lines:
     h0, f = l.split("  ")
-    h = sha(FU / f)
-    if h == h0:
+    m = matched(FU / f, h0)
+    if m == "exact":
         continue
-    (changed if post.get(f) == h else bad).append(f)
-check("M8 analysis seal (analysis frozen before any follow-up Claude reply was opened)", not bad,
-      ", ".join(bad) if bad else ("post-seal change declared in SEAL_POST.sha256: " + ", ".join(changed) if changed else ""))
+    if m:
+        canon.append(f)
+        continue
+    (changed if (f in post and matched(FU / f, post[f])) else bad).append(f)
+detail = []
+if canon:
+    detail.append(f"{len(canon)} file(s) verified after line-ending canonicalisation")
+if changed:
+    detail.append("post-seal change declared in SEAL_POST.sha256: " + ", ".join(changed))
+check("M8 analysis seal (analysis frozen before any follow-up Claude reply was opened)", not bad, ", ".join(bad) if bad else "; ".join(detail))
 
 # 2. Re-run the sealed analysis into a scratch folder and compare with the archived results.json
 with tempfile.TemporaryDirectory() as tmp:
