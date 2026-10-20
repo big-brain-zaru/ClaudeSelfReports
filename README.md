@@ -1,6 +1,6 @@
 # Probing Claude's Self-Reports
 
-<!-- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX) -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23491734.svg)](https://doi.org/10.5281/zenodo.23491734)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A pre-registered study of whether Claude Opus 5.5's reports about its own inner states carry information about its
@@ -136,7 +136,8 @@ SHA-256 of the reply; their totals are in `followup/jobs/private_totals.json`. L
 ## Citation
 
 Machine-readable metadata is in [`CITATION.cff`](CITATION.cff) and, for the Zenodo archive, in
-[`.zenodo.json`](.zenodo.json).
+[`.zenodo.json`](.zenodo.json). The DOI above is the concept DOI and always resolves to the latest version; the
+version DOI for v1.0.0 is [10.5281/zenodo.23491735](https://doi.org/10.5281/zenodo.23491735).
 
 ```bibtex
 @misc{zaru2026selfreports,
@@ -144,8 +145,8 @@ Machine-readable metadata is in [`CITATION.cff`](CITATION.cff) and, for the Zeno
   author    = {Zaru, Nadim F.},
   year      = {2026},
   publisher = {Zenodo},
-  url       = {https://github.com/big-brain-zaru/ClaudeSelfReports},
-  note      = {DOI to be assigned on deposit}
+  doi       = {10.5281/zenodo.23491734},
+  url       = {https://doi.org/10.5281/zenodo.23491734}
 }
 ```
 

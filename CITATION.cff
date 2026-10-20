@@ -4,10 +4,18 @@ type: software
 title: >-
   Probing Claude's Self-Reports: Three Exploratory Layers and a
   Pre-Registered One-Go Follow-Up on Claude Opus 5.5
-version: 1.0.0
+version: 1.0.1
 date-released: "2026-10-20"
 license: MIT
 repository-code: "https://github.com/big-brain-zaru/ClaudeSelfReports"
+doi: "10.5281/zenodo.23491734"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23491734"
+    description: "Concept DOI, always resolving to the latest version"
+  - type: doi
+    value: "10.5281/zenodo.23491735"
+    description: "Version DOI for v1.0.0"
 authors:
   - family-names: Zaru
     given-names: "Nadim F."
